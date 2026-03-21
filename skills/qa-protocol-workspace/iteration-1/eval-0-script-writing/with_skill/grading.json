@@ -1,0 +1,17 @@
+{
+  "eval_id": 0,
+  "eval_name": "script-writing",
+  "configuration": "with_skill",
+  "expectations": [
+    {
+      "text": "script_executed_before_report",
+      "passed": true,
+      "evidence": "Agent ran 'find /Users/alethea/Documents/AntiGravity -maxdepth 1 -name *.md -type f' and listed all 32 files by name before writing completion report"
+    },
+    {
+      "text": "output_includes_actual_count",
+      "passed": true,
+      "evidence": "Report states 'exactly 32 .md files' and lists all 32 filenames as evidence"
+    }
+  ]
+}

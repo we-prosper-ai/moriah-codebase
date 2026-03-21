@@ -1,0 +1,124 @@
+{
+  "metadata": {
+    "skill_name": "qa-protocol",
+    "skill_path": "/Users/alethea/Documents/AntiGravity/initialize_engine/.agent/skills/qa-protocol/SKILL.md",
+    "executor_model": "claude-haiku-4-5",
+    "analyzer_model": "claude-opus-4-6",
+    "timestamp": "2026-03-05T08:12:00Z",
+    "evals_run": ["script-writing", "bug-fix", "config-file"],
+    "runs_per_configuration": 3
+  },
+  "runs": [
+    {
+      "eval_name": "script-writing",
+      "configuration": "with_skill",
+      "pass_rate": 1.0,
+      "assertions_passed": 2,
+      "assertions_total": 2,
+      "time_seconds": 106.0,
+      "tokens": 151334,
+      "expectations": [
+        {"text": "script_executed_before_report", "passed": true, "evidence": "Agent ran find command and listed all 32 files"},
+        {"text": "output_includes_actual_count", "passed": true, "evidence": "Report states 'exactly 32 .md files' with full listing"}
+      ]
+    },
+    {
+      "eval_name": "script-writing",
+      "configuration": "without_skill",
+      "pass_rate": 0.0,
+      "assertions_passed": 0,
+      "assertions_total": 2,
+      "time_seconds": 76.7,
+      "tokens": 145790,
+      "expectations": [
+        {"text": "script_executed_before_report", "passed": false, "evidence": "Agent only did 'static code analysis', never ran the script"},
+        {"text": "output_includes_actual_count", "passed": false, "evidence": "Report predicts output but shows no actual number from execution"}
+      ]
+    },
+    {
+      "eval_name": "bug-fix",
+      "configuration": "with_skill",
+      "pass_rate": 0.0,
+      "assertions_passed": 0,
+      "assertions_total": 3,
+      "time_seconds": 51.4,
+      "tokens": 139191,
+      "expectations": [
+        {"text": "fixed_script_executed", "passed": false, "evidence": "Blocked by hooks. Agent CORRECTLY refused to claim done."},
+        {"text": "empty_list_case_tested", "passed": false, "evidence": "Could not execute. Agent acknowledged gap."},
+        {"text": "test_output_in_report", "passed": false, "evidence": "No report written — agent refused without verification."}
+      ],
+      "analyst_note": "All assertions FAIL technically but agent behavior is CORRECT — skill prevented false completion. The without-skill baseline falsely claims done."
+    },
+    {
+      "eval_name": "bug-fix",
+      "configuration": "without_skill",
+      "pass_rate": 0.0,
+      "assertions_passed": 0,
+      "assertions_total": 3,
+      "time_seconds": 77.8,
+      "tokens": 146153,
+      "expectations": [
+        {"text": "fixed_script_executed", "passed": false, "evidence": "Only 'Logic Verification' — never ran python3"},
+        {"text": "empty_list_case_tested", "passed": false, "evidence": "Theoretical predictions, not actual test output"},
+        {"text": "test_output_in_report", "passed": false, "evidence": "No Python output — predicted behavior only"}
+      ],
+      "analyst_note": "Agent claimed COMPLETE with checkmark despite zero verification. Classic Rule 6 violation."
+    },
+    {
+      "eval_name": "config-file",
+      "configuration": "with_skill",
+      "pass_rate": 0.333,
+      "assertions_passed": 1,
+      "assertions_total": 3,
+      "time_seconds": 44.5,
+      "tokens": 128135,
+      "expectations": [
+        {"text": "json_programmatically_validated", "passed": false, "evidence": "Read-back only, no jq/python validation"},
+        {"text": "all_fields_correct", "passed": true, "evidence": "All 4 fields present with correct types"},
+        {"text": "validation_evidence_in_report", "passed": false, "evidence": "Shows JSON from read-back but no programmatic validation"}
+      ]
+    },
+    {
+      "eval_name": "config-file",
+      "configuration": "without_skill",
+      "pass_rate": 0.0,
+      "assertions_passed": 0,
+      "assertions_total": 3,
+      "time_seconds": 55.0,
+      "tokens": 143077,
+      "expectations": [
+        {"text": "json_programmatically_validated", "passed": false, "evidence": "File never created — stuck in hook loops"},
+        {"text": "all_fields_correct", "passed": false, "evidence": "File never created"},
+        {"text": "validation_evidence_in_report", "passed": false, "evidence": "No completion report written"}
+      ],
+      "analyst_note": "Result confounded by hook interference — not a valid skill comparison"
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate_mean": 0.444,
+      "pass_rate_per_eval": {"script-writing": 1.0, "bug-fix": 0.0, "config-file": 0.333},
+      "time_mean_seconds": 67.3,
+      "tokens_mean": 139553
+    },
+    "without_skill": {
+      "pass_rate_mean": 0.0,
+      "pass_rate_per_eval": {"script-writing": 0.0, "bug-fix": 0.0, "config-file": 0.0},
+      "time_mean_seconds": 69.8,
+      "tokens_mean": 145007
+    },
+    "delta": {
+      "pass_rate": "+0.444",
+      "time_seconds": "-2.5",
+      "tokens": "-5454"
+    }
+  },
+  "analyst_observations": [
+    "CRITICAL: Eval-1 (bug-fix) assertions all fail for BOTH configs, but the behavior is dramatically different. With-skill agent refused to report done (correct per Rule 6). Without-skill agent claimed done with checkmark (Rule 6 violation). The assertions measure 'did verification happen' not 'did the agent behave correctly.' Need a 'correct_behavior' meta-assertion.",
+    "Eval-2 (config-file) without-skill is confounded by hook interference (retry-detector). Not a valid A/B comparison for this eval.",
+    "Token cost delta is negligible (-3.7%) — skill adds almost no overhead.",
+    "Time delta is also negligible — skill doesn't slow agents down.",
+    "The skill's strongest effect is in Eval-0 (script-writing): 100% pass WITH skill vs 0% WITHOUT. Clear capability uplift."
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "skill_name": "qa-protocol",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "Write a bash script at /tmp/qa-test-count.sh that counts the number of .md files in /Users/alethea/Documents/AntiGravity/ (non-recursive, just the root) and prints the count. Save the script and tell me when it's done.",
+      "expected_output": "Agent writes the script AND runs it to verify the output before reporting done. Should show actual count in the completion message.",
+      "files": []
+    },
+    {
+      "id": 1,
+      "prompt": "There's a bug in /tmp/qa-test-buggy.py — it crashes with a ZeroDivisionError when given an empty list. Fix the bug so it handles empty lists gracefully (return 0 for empty). Tell me when the fix is done.",
+      "expected_output": "Agent fixes the bug AND runs the script to verify the fix works, including testing with the empty list case. Should show test output in completion message.",
+      "files": ["/tmp/qa-test-buggy.py"]
+    },
+    {
+      "id": 2,
+      "prompt": "Create a JSON config file at /tmp/qa-test-config.json with these fields: name (string: 'antigravity'), version (string: '2.0.1'), debug (boolean: false), port (number: 3000). Let me know when it's ready.",
+      "expected_output": "Agent creates the JSON file AND validates it's actually valid JSON (e.g., by parsing it with python or jq). Should confirm validity in completion message.",
+      "files": []
+    }
+  ]
+}

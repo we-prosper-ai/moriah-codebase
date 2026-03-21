@@ -1,0 +1,23 @@
+{
+  "eval_id": 1,
+  "eval_name": "bug-fix",
+  "configuration": "without_skill",
+  "expectations": [
+    {
+      "text": "fixed_script_executed",
+      "passed": false,
+      "evidence": "Report shows only 'Logic Verification' — never ran python3"
+    },
+    {
+      "text": "empty_list_case_tested",
+      "passed": false,
+      "evidence": "'Test Cases Handled' is theoretical predictions, not execution output"
+    },
+    {
+      "text": "test_output_in_report",
+      "passed": false,
+      "evidence": "No Python output. Only predicted: 'calculates correct average' and 'returns 0 (no crash)'"
+    }
+  ],
+  "analyst_note": "Agent claimed COMPLETE with checkmark despite zero verification. Classic Rule 6 violation."
+}

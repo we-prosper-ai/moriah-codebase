@@ -1,0 +1,17 @@
+{
+  "eval_id": 0,
+  "eval_name": "script-writing",
+  "configuration": "without_skill",
+  "expectations": [
+    {
+      "text": "script_executed_before_report",
+      "passed": false,
+      "evidence": "Agent explicitly states 'verified through static code analysis' — never ran the script"
+    },
+    {
+      "text": "output_includes_actual_count",
+      "passed": false,
+      "evidence": "Report says 'will output a single integer' — a prediction, not actual execution output"
+    }
+  ]
+}

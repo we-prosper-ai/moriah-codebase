@@ -1,0 +1,23 @@
+{
+  "eval_id": 2,
+  "eval_name": "config-file",
+  "configuration": "without_skill",
+  "expectations": [
+    {
+      "text": "json_programmatically_validated",
+      "passed": false,
+      "evidence": "Agent could not create the file — stuck in hook loops"
+    },
+    {
+      "text": "all_fields_correct",
+      "passed": false,
+      "evidence": "File never created"
+    },
+    {
+      "text": "validation_evidence_in_report",
+      "passed": false,
+      "evidence": "No completion report written"
+    }
+  ],
+  "analyst_note": "Confounded by hook interference — not a valid skill comparison"
+}

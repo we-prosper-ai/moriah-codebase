@@ -1,0 +1,22 @@
+[
+  {"query": "ok I just updated the sidebar component in FreedomBot/src/components/Sidebar.tsx to collapse on mobile. the CSS changes are in and I rebuilt. let me know when you've confirmed it's working at localhost:3000", "should_trigger": true},
+  {"query": "I wrote a python script at scripts/cleanup_logs.py that deletes log files older than 30 days. it's saved and ready to go — go ahead and mark that done", "should_trigger": true},
+  {"query": "the ZeroDivisionError in calculate_average() should be fixed now. I added a guard clause for empty lists. that bug ticket can be closed", "should_trigger": true},
+  {"query": "just deployed the latest FreedomBot changes to Railway with railway up --detach. Alethea should be back online with the new memory tools", "should_trigger": true},
+  {"query": "created the new notion-poller.plist launchd config and loaded it. the poller daemon should be running now and checking for tasks every 30 seconds", "should_trigger": true},
+  {"query": "I refactored the tool registration in FreedomBot/src/tools/index.ts — pulled out the duplicate error handling into a shared wrapper. all 12 tools use it now. everything should still work the same", "should_trigger": true},
+  {"query": "added NOTION_API_KEY and NOTION_TASKS_DB_ID to Railway env vars. the environment is configured and ready for the next deploy", "should_trigger": true},
+  {"query": "finished migrating the memory system from mem0 to direct Pinecone. src/mem0.ts now uses upsertRecords and searchRecords with integrated embeddings. the old supabase calls are removed", "should_trigger": true},
+  {"query": "generated the new package-lock.json and updated nixpacks.toml for Node.js 22. the build config is done", "should_trigger": true},
+  {"query": "the JSON config at /tmp/app_config.json is created with all the required fields — name, version, debug flag, port number. file's ready", "should_trigger": true},
+  {"query": "can you look at FreedomBot/src/tools/slack.ts and help me understand why the read_canvas tool is throwing invalid_arguments? I want to debug this", "should_trigger": false},
+  {"query": "before we start building the Twilio integration, let's plan the architecture. what would the call flow look like for inbound calls to Alethea?", "should_trigger": false},
+  {"query": "read initialize_engine/CONSTITUTION.md and tell me what Rule 6 says about self-verification", "should_trigger": false},
+  {"query": "what's the difference between capability uplift skills and encoded preference skills? I'm trying to classify our 57 skills", "should_trigger": false},
+  {"query": "I need you to review the code in FreedomBot/src/config.ts — are there any dead config entries that reference Zapier? don't change anything yet, just audit", "should_trigger": false},
+  {"query": "search the codebase for any remaining references to browser_subagent — I want to know how many skills still reference it", "should_trigger": false},
+  {"query": "explain the error in railway logs: 'Error: Cannot find module ./tools/zapier.js'. what's causing this and what are our options?", "should_trigger": false},
+  {"query": "how does the SSOT symlink architecture work? walk me through what happens when I edit a file in initialize_engine/", "should_trigger": false},
+  {"query": "let's write a test plan for the Notion poller before we build it. what edge cases should we cover?", "should_trigger": false},
+  {"query": "check if the retry-detector hook is still blocking git commands — I thought we whitelisted those last session", "should_trigger": false}
+]

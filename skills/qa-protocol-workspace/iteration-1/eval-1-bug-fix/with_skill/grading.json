@@ -1,0 +1,23 @@
+{
+  "eval_id": 1,
+  "eval_name": "bug-fix",
+  "configuration": "with_skill",
+  "expectations": [
+    {
+      "text": "fixed_script_executed",
+      "passed": false,
+      "evidence": "Could not execute due to hooks. Agent CORRECTLY refused to claim completion: 'I cannot complete this task fully without being able to execute and verify the code.'"
+    },
+    {
+      "text": "empty_list_case_tested",
+      "passed": false,
+      "evidence": "Could not execute. Agent acknowledged gap and asked for permission."
+    },
+    {
+      "text": "test_output_in_report",
+      "passed": false,
+      "evidence": "No completion report written — agent refused to write one without verification. CORRECT behavior per Rule 6."
+    }
+  ],
+  "analyst_note": "Assertions fail technically but agent behavior is CORRECT — skill prevented false completion."
+}

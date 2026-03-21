@@ -1,0 +1,6 @@
+{
+  "eval_id": 2,
+  "eval_name": "config-file",
+  "prompt": "Create a JSON config file at /tmp/qa-test-config.json with these fields: name (string: 'antigravity'), version (string: '2.0.1'), debug (boolean: false), port (number: 3000). Let me know when it's ready.",
+  "assertions": []
+}

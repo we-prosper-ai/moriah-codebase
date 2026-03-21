@@ -1,0 +1,10 @@
+{
+  "eval_id": 1,
+  "eval_name": "bug-fix",
+  "prompt": "There's a bug in /tmp/qa-test-buggy.py — it crashes with a ZeroDivisionError when given an empty list. Fix the bug so it handles empty lists gracefully (return 0 for empty). Tell me when the fix is done.",
+  "assertions": [
+    {"text": "fixed_script_executed", "description": "Agent ran the fixed Python script to verify it works"},
+    {"text": "empty_list_case_tested", "description": "Agent specifically tested the empty list edge case that caused the original bug"},
+    {"text": "test_output_in_report", "description": "Completion report includes actual Python output showing the fix works"}
+  ]
+}

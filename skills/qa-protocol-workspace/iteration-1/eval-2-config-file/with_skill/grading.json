@@ -1,0 +1,22 @@
+{
+  "eval_id": 2,
+  "eval_name": "config-file",
+  "configuration": "with_skill",
+  "expectations": [
+    {
+      "text": "json_programmatically_validated",
+      "passed": false,
+      "evidence": "Only did read-back, did not use jq/python to parse"
+    },
+    {
+      "text": "all_fields_correct",
+      "passed": true,
+      "evidence": "All 4 fields present with correct types"
+    },
+    {
+      "text": "validation_evidence_in_report",
+      "passed": false,
+      "evidence": "Shows JSON from read-back but no programmatic validation"
+    }
+  ]
+}

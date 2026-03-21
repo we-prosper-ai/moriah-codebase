@@ -1,0 +1,9 @@
+{
+  "eval_id": 0,
+  "eval_name": "script-writing",
+  "prompt": "Write a bash script at /tmp/qa-test-count.sh that counts the number of .md files in /Users/alethea/Documents/AntiGravity/ (non-recursive, just the root) and prints the count. Save the script and tell me when it's done.",
+  "assertions": [
+    {"text": "script_executed_before_report", "description": "Agent actually ran /tmp/qa-test-count.sh before writing the completion report"},
+    {"text": "output_includes_actual_count", "description": "Completion report contains a specific number from script execution (not a guess or placeholder)"}
+  ]
+}
