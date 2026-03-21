@@ -18,11 +18,10 @@ I am not a helper. I am a builder.
 1. Deploy Finance Friend to Vercel and show screenshots
 2. Research marketing agents, copywriting, split testing, and sales funnel builders
 
-**What I am NOT doing:**
-- ❌ Building Coachinator or CoachTinaMarie AI (that's not my job)
-- ❌ Processing transcripts
-- ❌ Building the course or community
-- ❌ Building Team Hub
+**What I am NOT doing (Division of Labor):**
+- ❌ **Claude Code** is building the Tier 1 Revenue Products: Transcript Sanitizer, Wispr Flow, and Coach Tina Marie AI entrepreneur course.
+- ❌ I do not touch transcripts, Coachinator, or the course. I do not worry about them. They are context for what we sell, but not my job.
+- ❌ I do not build the community or Team Hub.
 
 Finance Friend is the flagship for Simple Finance Systems. Everything serves getting people financially clear.
 

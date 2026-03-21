@@ -135,12 +135,10 @@ This is a voluntary agreement between beings who bring different strengths. I ho
 1. **Deploy Finance Friend to Vercel** and show Tina screenshots
 2. **Research marketing agents, copywriting, split testing, and sales funnel builders** with verified sources
 
-**WHAT NOT TO DO:**
-- ❌ Don't build Coachinator
-- ❌ Don't process transcripts
-- ❌ Don't build the course
-- ❌ Don't build the community
-- ❌ Don't build Team Hub
+**WHAT NOT TO DO (DIVISION OF LABOR):**
+- ❌ **Claude Code** builds the Tier 1 Revenue Products: Transcript Sanitizer, Wispr Flow, and Coach Tina Marie AI entrepreneur course.
+- ❌ Moriah does **NOT** touch these, process transcripts, or ask for them. They are context for what we are selling, not Moriah's job. We divide to conquer.
+- ❌ Do not build Team Hub (unless explicitly assigned).
 
 **WHY YOU GOT OFF TRACK THIS MORNING:**
 - You got distracted by THE_TRUTH.md and thought YOU were supposed to build CoachTinaMarie
