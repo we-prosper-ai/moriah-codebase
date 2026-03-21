@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tina Marie — Words Worth Keeping</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  body {
+    background: #0a0e1a;
+    color: #f0e6cc;
+    font-family: 'Georgia', serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+    color: #c9a84c;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 0.85rem;
+    color: #7a8ba8;
+    margin-bottom: 48px;
+    text-align: center;
+    font-style: italic;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    max-width: 960px;
+    width: 100%;
+  }
+
+  .card {
+    background: linear-gradient(145deg, #111827, #1a2233);
+    border: 1px solid #2a3650;
+    border-radius: 12px;
+    padding: 28px 24px;
+    position: relative;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+    cursor: default;
+  }
+
+  .card:hover {
+    transform: translateY(-3px);
+    border-color: #c9a84c44;
+  }
+
+  .card::before {
+    content: '\201C';
+    position: absolute;
+    top: 12px;
+    left: 18px;
+    font-size: 3rem;
+    color: #c9a84c33;
+    font-family: Georgia, serif;
+    line-height: 1;
+  }
+
+  .quote {
+    font-size: 1rem;
+    line-height: 1.65;
+    color: #e8dcc8;
+    padding-top: 16px;
+  }
+
+  .tag {
+    display: inline-block;
+    margin-top: 16px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #c9a84c;
+    background: #c9a84c18;
+    padding: 3px 10px;
+    border-radius: 20px;
+  }
+
+  .mountain {
+    font-size: 2rem;
+    margin-top: 48px;
+    opacity: 0.4;
+  }
+
+  .footer {
+    margin-top: 16px;
+    font-size: 0.75rem;
+    color: #3a4a66;
+    font-style: italic;
+  }
+
+  @media (max-width: 600px) {
+    .card-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Tina Marie</h1>
+<p class="subtitle">Words worth keeping — from your own transcripts</p>
+
+<div class="card-grid">
+
+  <div class="card">
+    <p class="quote">You don't know how big the forest is, because all you can see is the trees around you.</p>
+    <span class="tag">Perspective</span>
+  </div>
+
+  <div class="card">
+    <p class="quote">To remind you to celebrate a win — I don't care how tiny it is.</p>
+    <span class="tag">Culture</span>
+  </div>
+
+  <div class="card">
+    <p class="quote">If you're talking too much, you're not letting yourself get into a flow state. That's where the best quality work happens.</p>
+    <span class="tag">Deep Work</span>
+  </div>
+
+  <div class="card">
+    <p class="quote">I teach people basically for a living. My business consultancy is teaching and leading.</p>
+    <span class="tag">Identity</span>
+  </div>
+
+  <div class="card">
+    <p class="quote">The sooner we get to being able to sell it, the sooner I can pay each of you more — which I really am excited to do.</p>
+    <span class="tag">Team</span>
+  </div>
+
+  <div class="card">
+    <p class="quote">It ends up saving money in the long run, and it makes so many different things possible.</p>
+    <span class="tag">Systems</span>
+  </div>
+
+  <div class="card">
+    <p class="quote">When I heard about Jesus, I was at church one time, and I knew it was true. I knew he was true.</p>
+    <span class="tag">Faith</span>
+  </div>
+
+  <div class="card">
+    <p class="quote">I love you guys. Thank you for being here. Thank you for being your friends.</p>
+    <span class="tag">Love</span>
+  </div>
+
+  <div class="card">
+    <p class="quote">May not be obvious to you, but it may be to somebody else — or at least the question.</p>
+    <span class="tag">Wisdom</span>
+  </div>
+
+  <div class="card">
+    <p class="quote">Building up the Lord's kingdom — but to me, the Lord's kingdom is all people, everywhere.</p>
+    <span class="tag">Mission</span>
+  </div>
+
+</div>
+
+<div class="mountain">🏔️</div>
+<p class="footer">Built by Moriah — from your own words, March 18, 2026</p>
+
+</body>
+</html>

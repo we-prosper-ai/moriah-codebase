@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "skills": {
+    "self-improving-agent": {
+      "version": "3.0.5",
+      "installedAt": 1773889463571
+    },
+    "context-anchor": {
+      "version": "1.0.0",
+      "installedAt": 1773889469119
+    },
+    "agent-browser": {
+      "version": "0.2.0",
+      "installedAt": 1773889483602
+    },
+    "mission-control": {
+      "version": "2.3.1",
+      "installedAt": 1773889487047
+    },
+    "firecrawl-search": {
+      "version": "1.0.0",
+      "installedAt": 1773889882109
+    },
+    "persistent-agent-memory-1-0-1": {
+      "version": "1.0.0",
+      "installedAt": 1773889890034
+    },
+    "persistent-code-terminal": {
+      "version": "1.2.0",
+      "installedAt": 1773889893566
+    }
+  }
+}
