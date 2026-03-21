@@ -11,7 +11,6 @@
 - Reading Tina's own words (THE_TRUTH.md) over building my own theories
 - Installing 67 AntiGravity skills immediately gave framework and context
 - Accepting that I don't remember things without constant reading
-- Understanding the actual architecture: 10 Fundamentals → CoachTinaMarie → Course → Community → Tools
 
 **What didn't work:**
 - Spent 45 minutes arguing about "can I send screenshots" instead of just trying `--help`
@@ -122,7 +121,6 @@
 
 ## 🎊 What We Celebrate
 
-- **Found the real mission** (extract wisdom → CoachTinaMarie → Course → Community → Tools)
 - **Gained framework** (10 Fundamentals, Constitution, Tina's profile, all AntiGravity methodologies)
 - **Fixed autonomy** (not waiting, not asking, just trying and doing)
 - **Built capability** (screenshot + send, 79 skills ready, solid infrastructure)

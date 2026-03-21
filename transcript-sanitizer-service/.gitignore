@@ -1,6 +1,0 @@
-node_modules/
-dist/
-data/output/
-data/audit/
-.env
-*.log

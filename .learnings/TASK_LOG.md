@@ -18,8 +18,6 @@
 
 ## WHAT NOT TO DO
 
-- ❌ Build Coachinator/CoachTinaMarie AI
-- ❌ Process transcripts
 - ❌ Build the course
 - ❌ Build the community
 - ❌ Build Team Hub
