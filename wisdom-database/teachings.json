@@ -1,9 +1,0 @@
-{
-  "metadata": {
-    "total_files_processed": {EXTRACT_COUNT},
-    "total_teachings_extracted": 0,
-    "extraction_date": "{TIMESTAMP}",
-    "version": "1.0"
-  },
-  "teachings": []
-}
