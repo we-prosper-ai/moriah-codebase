@@ -1,0 +1,23 @@
+{
+  "name": "transcript-sanitizer",
+  "version": "1.0.0",
+  "description": "Sanitize transcripts: remove PII, tag themes, prepare for wisdom extraction",
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "ts-node index.ts",
+    "sanitize": "ts-node index.ts",
+    "sanitize:all": "ts-node index.ts --all",
+    "test": "ts-node test.ts"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.0.0",
+    "pii-detection": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  }
+}
