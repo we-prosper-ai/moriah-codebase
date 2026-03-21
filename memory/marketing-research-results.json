@@ -1,0 +1,72 @@
+[
+  {
+    "category": "marketing agents",
+    "tool": "Artisan AI (Ava)",
+    "rating": "4.2/5",
+    "realUserSentiment": "Users appreciate hands-off automation for outbound sequences. Frequent complaint: setup takes longer than advertised to prevent robotic-sounding messages. Some integration friction with certain CRMs.",
+    "bestFor": "B2B outbound email automation with personalization",
+    "limitations": "Steep learning curve, CRM integrations can be clunky, premium pricing makes it less accessible for small teams",
+    "pricing": "$500+/month (often custom quotes for features)",
+    "source": "Reddit r/sales, G2 reviews"
+  },
+  {
+    "category": "copywriting",
+    "tool": "Jasper",
+    "rating": "4.5/5",
+    "realUserSentiment": "Previously market leader, now users feel overpriced vs ChatGPT Plus/Claude Pro. Strong brand voice compliance. Output often requires heavy editing to avoid sounding obviously AI-generated.",
+    "bestFor": "Teams needing centralized brand voice and rigid templates",
+    "limitations": "Expensive ($39-59/mo), output quality comparable to free alternatives, cancellation process notorious for resistance",
+    "pricing": "$39/mo (Creator tier) to $59/mo (Pro tier)",
+    "source": "Reddit r/marketing, G2"
+  },
+  {
+    "category": "copywriting",
+    "tool": "Copy.ai",
+    "rating": "4.6/5",
+    "realUserSentiment": "Praised for UI/UX and Workflows automation feature. Users note generation quality isn't notably superior to raw ChatGPT. Good for bulk social content.",
+    "bestFor": "Bulk content generation, social media copy, workflow automation",
+    "limitations": "Sometimes hallucinates facts, limited long-form blog capabilities, quality varies by content type",
+    "pricing": "Free tier + Pro at $49/mo",
+    "source": "Product Hunt, G2"
+  },
+  {
+    "category": "split-testing",
+    "tool": "VWO (Visual Website Optimizer)",
+    "rating": "4.3/5",
+    "realUserSentiment": "Solid enterprise-grade tool. Users report UI can be sluggish but multivariate testing capabilities are comprehensive. Page load impact is a known issue.",
+    "bestFor": "Mid-market to enterprise A/B/n testing, complex statistical analysis",
+    "limitations": "Can slow page load (flicker effect), steep learning curve, overkill for small ecommerce sites",
+    "pricing": "Free starter tier, $300+/mo for enterprise traffic",
+    "source": "Capterra, G2"
+  },
+  {
+    "category": "split-testing",
+    "tool": "Instapage",
+    "rating": "4.3/5",
+    "realUserSentiment": "Excellent drag-and-drop builder loved by PPC marketers. Major complaint: pricing model keeps increasing. Users feel nickel-and-dimed for traffic tiers.",
+    "bestFor": "PPC-driven landing pages with high conversion optimization",
+    "limitations": "Very expensive for SMBs, traffic limits on lower tiers, not ideal for high-volume sites",
+    "pricing": "$199/mo (Build tier and up)",
+    "source": "Reddit r/PPC, G2"
+  },
+  {
+    "category": "funnel-builders",
+    "tool": "ClickFunnels 2.0",
+    "rating": "3.9/5",
+    "realUserSentiment": "Mixed reviews on 2.0. Users love the training ecosystem and community, but criticize buggy software, slow support, and aggressive marketing. Pages load slowly.",
+    "bestFor": "Info-product creators, course sellers wanting all-in-one ecosystem",
+    "limitations": "Clunky page builder, slow page load times, virtually no SEO capabilities, support response times lag",
+    "pricing": "$147/mo (Basic) to $297/mo (Pro)",
+    "source": "Reddit r/Entrepreneur, G2"
+  },
+  {
+    "category": "funnel-builders",
+    "tool": "ThriveCart",
+    "rating": "4.8/5",
+    "realUserSentiment": "Universally loved for lifetime deal pricing model. Builder is dated but reliable. Excellent integration ecosystem. Real user standout: predictable costs, no surprise increases.",
+    "bestFor": "Creators needing robust checkout, basic upsells, lifetime investment model",
+    "limitations": "Limited design customization, not a full website builder, dated UI",
+    "pricing": "$495 (Standard Lifetime) / $690 (Pro Lifetime) — one-time payment",
+    "source": "Reddit r/marketing, Facebook Groups, verified user testimonials"
+  }
+]
