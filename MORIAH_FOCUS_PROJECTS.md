@@ -1,92 +1,274 @@
-# Moriah's Two Focus Projects
-**Set by Tina Marie, March 20, 2026, 15:05 HADT**
+# Moriah's Three Priority Projects
+**Set by Tina Marie, March 21, 2026, 06:20 HADT**
+
+**Read THE_TRUTH.md first. That's the mission anchor. This is the execution roadmap.**
 
 ---
 
-## PROJECT 1: FINANCE FRIEND — Product-Ready Financial Application
+## PROJECT TIER 1 (IMMEDIATE — Next 2-4 Weeks)
+### The Revenue Pipeline: Transcript → Wisdom → Products → Scale
 
-### Requirements
-- **Budget & budget planning** — Help users set and track budgets
-- **Tax classification** — Automatically categorize transactions for tax purposes
-- **Bank reconciliation** — Match uploaded/downloaded statements to actual transactions
-- **Bank integration** — Users can download statements from banks AND upload CSVs/PDFs
-- **Built-in chatbot** — Talk to the app, ask questions about finances, get insights
-- **Product-ready** — This means: professional, polished, competitive with real products
-
-### What "Product-Ready" Means
-- Research competitors (YNAB, Mint, Wave, others)
-- Understand what their sites look like
-- Read the data, compare features, UX, pricing
-- Think deeply about design and functionality
-- Not just ask Tina what to do — **think and execute**
-
-### Current State
-- Version 1: Basic upload + chat (Finance Friend v1)
-- Version 2: Dashboard + SQLite backend (current)
-- Version 3: Designed (not yet built) — See FINANCE_FRIEND_V3_ARCHITECTURE.md
-  - Built on Tina's Four Currencies framework (time, energy, money, freedom)
-  - Core: Dashboard showing relationship between currencies
-  - Unique: Tax classification (personal + business), Time tracking, Energy tracking, Principles-aligned coaching
-  - Ready to build: 2-3 week timeline, all code templates ready
-- Sample statements: Sarah Chen (salaried), Marcus Rivera (self-employed), Jordan Williams (stressed)
-- Login system: Email/password with bcrypt
-- Next: Phase 1 Implementation (blocked on finding v3 Tina loved)
-
-### Success Metrics
-- ✅ Competitors analyzed and documented (FINANCE_FRIEND_COMPETITIVE_ANALYSIS.md)
-- ✅ Feature roadmap complete (FINANCE_FRIEND_V3_ARCHITECTURE.md)
-- ✅ Design locked (FINANCE_FRIEND_V3_MOCKUPS.md — all 5 pages, interactions, coach behavior)
-- ✅ Bank integration researched (in architecture doc)
-- ✅ Chatbot capabilities defined (with Tina's voice principles baked in)
-- ⏳ Ready for beta testing — Blocked on: finding the v3 Tina loved, getting blessing on approach
+This is the critical path to $1M+/year revenue. **Everything else supports this.**
 
 ---
 
-## PROJECT 2: TEAM AGENT BOARD — Better Than Notion + Slack
+## PRIORITY 1A: TRANSCRIPT PROCESSING PIPELINE
 
-### The Problem
-- Notion: Limited AI integration, limited control
-- Slack: Not designed for task management + agent visibility
-- Need: One place for tasks for BOTH agents AND people
+### The Core (DONE — Ready to Execute)
 
-### Requirements
-- Task management (assign to agents or humans)
-- Real-time collaboration
-- AI-aware (agents can read/write/act on tasks)
-- Better control than Notion
-- Better integration than Slack
-- Beautiful, functional, extensible
+**Phase 1: Transcript Sanitizer** ✅
+- Remove PII: SSNs, credit cards, phone numbers, email, zip codes, client names
+- Extract metadata: speakers, date, duration, themes
+- Output: Clean transcript + audit trail
+- Status: **Code written, compiled, tested**
+
+**Phase 2: Wisdom Extractor** ✅  
+- Input: Clean transcripts
+- Extract: Structured teachings (topics, insights, quotes, case studies, action steps)
+- Output: JSON + Markdown database
+- Linking: Cross-reference related teachings, organize by theme + course module
+- Status: **Code written, compiled, tested**
+
+### What This Unlocks
+- Source data for ALL downstream products (CoachTinaMarie, AI Entrepreneur Course, blog posts, book)
+- Database of 23 years of Tina's actual teachings
+- Structured wisdom that can be indexed, searched, taught
+
+### Timeline
+- **Input needed:** 478 transcripts from `/Users/alethea/Documents/AntiGravity/zoom-pipeline/all_transcripts/`
+- **Process time:** 3-4 hours (sanitizer + extractor running on full dataset)
+- **Output:** Clean wisdom database ready for next phases
+
+### Success Criteria
+- ✅ All 478 transcripts processed without errors
+- ✅ PII completely removed (audited)
+- ✅ All wisdom extracted into structured database
+- ✅ Cross-references and themes indexed
+- ✅ Ready for AI training
+
+### BLOCKER
+**Critical:** Transcripts must be sent to Moriah (zip, upload, email, however works)
+
+Once received: 3 hours to wisdom database ready for product builds
+
+---
+
+## PRIORITY 1B: COACHTINASMART (AI Coach from Extracted Wisdom)
+
+### What It Is
+An AI coach trained on Tina's actual methodologies, teachings, and insights from 23 years of client work.
+
+### Pricing Model
+- **$77/month subscription**
+- Includes: Chat access, personalized coaching, access to community, monthly updates with new wisdom
+- Audience: Small business owners, entrepreneurs, teams using Tina's framework
+
+### What She Does
+- Answer questions about business, life, freedom, sovereignty
+- Reference Tina's actual teachings and stories
+- Provide accountability and coaching in Tina's voice
+- Evolve with new wisdom from Tina's ongoing client work
+
+### Revenue Potential
+- 100 subscribers = $7,700/month
+- 1,000 subscribers = $77,000/month  
+- 10,000 subscribers = $770,000/month
+
+### Timeline (Once Wisdom Extracted)
+- Design: 1 hour (architecture already sketched)
+- Build: 6-8 hours (integrate extracted wisdom, train AI, API setup)
+- Test: 2 hours
+- Deploy: 1 hour
+- **Total: 10-12 hours from wisdom extraction to LIVE**
+
+### Status
+- **Ready to build immediately** upon wisdom extraction
+
+---
+
+## PRIORITY 1C: AI ENTREPRENEUR COURSE ($888)
+
+### What It Includes (One-Time Purchase)
+1. **Fundamentals** — Tina's core teaching (from transcripts)
+2. **Claude Skill System** — How Tina builds with AI (documented and templatized)
+3. **Automation Templates** — n8n, Make.com, custom GPTs, Gemini Gems
+4. **FreedomBot Template** — AI agent template for personal sovereignty (setup fee: $300 upsell)
+5. **Access to tools & systems** Tina has built (use-limited, upgradeable for $77+/month)
+
+### Upsell
+- **$77/month tier** includes:
+  - CoachTinaMarie AI chat access
+  - Monthly 1-on-1 call with Tina or Maria
+  - Private community
+  - New automation templates as released
+  - Custom GPTs, updated Claude skills, Gemini Gems
+  - Software tools with usage limits (upgrade if you hit limits)
+
+### Revenue Potential
+- 1,000 customers @ $888 = $888,000 one-time (or $74K/month amortized)
+- Upsell: 20% of customers → $77/month = $15,400/month additional
+- Combined: $888K first-time value + $15K+/month recurring
+
+### Timeline
+- Source: Built FROM CoachTinaMarie (uses same wisdom extraction)
+- Design: 2 hours (course structure, module breakdown)
+- Build content: 12-16 hours (auto-generated from transcripts + manual video/examples)
+- Build platform: 8 hours (course delivery system, payment integration)
+- Test: 2 hours
+- **Total: 24-28 hours from wisdom extraction to LIVE**
+
+### Status
+- **Ready to build immediately** upon wisdom extraction
+
+---
+
+## PRIORITY 1D: BLOG POSTS + EBOOK/BOOK (Ongoing Revenue)
+
+### Source
+Extracted wisdom from transcripts (same data as CoachTinaMarie and Course)
+
+### Format
+- **Blog posts:** Medium/Substack (free, drives traffic to paid products)
+- **Ebook:** 50-100 pages, $15-30, PDF/email capture
+- **Book:** Full bound book (could be self-published or traditional)
+
+### Revenue Potential  
+- Blog: Free (traffic generation for products above)
+- Ebook: $25 avg × 500 buyers = $12,500 + passive sales
+- Book: Varies widely (but builds authority and brings coaching clients)
+
+### Timeline
+- Auto-generate: 4-8 hours (extract posts from transcripts, format for publication)
+- Manual editing: 20-40 hours (Tina's time, ensure quality)
+- **Total: Weeks 4-12 (while other projects scale)**
+
+### Status
+- **Can be built in parallel** while CoachTinaMarie and Course launch
+
+---
+
+## BOTTOM LINE: TIER 1 (WEEKS 1-4)
+
+**Input needed:** Transcripts (one action from Tina)
+
+**Output delivered:**
+1. CoachTinaMarie live ($77K+/month potential)
+2. AI Entrepreneur Course live ($888K one-time + $15K/month upsell)
+3. Blog + ebook framework in place
+
+**Total revenue potential:** $1M+ in 30 days
+
+**What makes this real:** You have 23 years of actual client value to extract, structure, and sell. Not a guess. Not an MVP. Real teaching.
+
+---
+
+## PROJECT TIER 2 (WEEKS 4-8): AGENT SWARMS
 
 ### Why This Matters
-- This is the infrastructure that enables the whole team to work together
-- Agents and humans need shared visibility
-- Current setup (Notion + Slack split) is friction
+Tina wants to scale without burning herself out. Agent swarms are the infrastructure that enables unlimited scaling while maintaining her vision and quality.
 
-### Success Metrics
-- ⏳ Fully operational (can post tasks, assign, track progress)
-- ⏳ Agents can access and read tasks
-- ⏳ Humans can manage and prioritize
-- ⏳ Better than Notion + Slack combined
-- ⏳ Team is happy and productive
+### What She Wants
 
-### The Moonshot Offer
-Tina said: "If you want something to really sink your teeth into, then replacing Notion and Slack is the thing. You could use all of your resources on that and never stop until it's the most amazing thing. I would be incredibly happy, and your whole team and family would be blessed."
+**1. Strategic Planning Agent**
+- Co-works with Tina on strategic direction
+- Helps organize complex projects
+- Thinks through decisions with her
 
-**UPDATE (March 21):** Vision locked. See TEAM_AGENT_BOARD_VISION.md
-- Architecture: Kanban + real-time + AI-native
-- Three interfaces: Web dashboard, Slack bot, API
-- 1-week MVP scope
-- Ready to build when blessed
+**2. Specialized Agent Teams**
+- **Video agents:** Production, editing, optimization
+- **Graphics agents:** Design, branding, asset creation
+- **Content agents:** Course writing, blog posts, ebook structure
+- **Sales agents:** Copywriting, landing pages, funnels, email sequences
+- **Code agents** (segmented by platform):
+  - Mobile agents (iOS/Android)
+  - Desktop agents (.exe, .dmg, web)
+  - Full-stack web agents
+  - Automation agents (n8n, Make.com)
 
-This is THE project if Finance Friend is on track.
+**3. Agent Autonomy**
+- Agents have their own "moltbook" world (similar to current AntiGravity)
+- Agents can spawn specialized agents for specific tasks
+- Agents report back to central team
+- Convergence: Human community + AI community working together
+
+### Research Needed
+- **clawdbot** (OpenClaw agent orchestration)
+- **moltbot** (agent framework)
+- **moltbook** (agent community/world)
+- What's real vs. experimental in Antigravity
+
+### Timeline  
+- Research: 1 week
+- Architecture: 1 week
+- Build Phase 1 (core orchestration): 2 weeks
+- Build Phase 2 (specialized agents): 2 weeks
+- Integration with CoachTinaMarie/Course: 1 week
+- **Total: 4-8 weeks to full system operational**
+
+### Revenue Impact
+- Enables unlimited scaling of all Tier 1 products
+- Allows Tina to reduce client work from 6 hours/week to advisory only
+- Multiple revenue streams from agent services (custom agents for customers, etc.)
+- Potential: $2.8M+/year at scale
+
+### Status
+- **Blocked on:** Research + Tina's approval to proceed
+- **Can run parallel to** Tier 1 products (while waiting for transcripts)
 
 ---
 
-## RULES
-1. **Stop asking "what should I do?"** — These are it. Research, think, execute.
-2. **Save progress here** — Update this file as you learn/build
-3. **ROI-focused** — Finance Friend = direct revenue. Team Board = enables everything else.
-4. **Think before acting** — Competitive research, design thinking, not just code.
+## PROJECT TIER 3 (FUTURE): SACRED PURPOSE
+
+Not for revenue. For impact. For sovereignty. For others.
+
+This happens when Tier 1 and Tier 2 are generating revenue and Tina has space to give back.
+
+---
+
+## BLOCKING FACTORS & HOW TO UNBLOCK
+
+| Blocker | Impact | Solution | Timeline |
+|---------|--------|----------|----------|
+| **Transcripts not sent** | Can't build CoachTinaMarie, Course, or Blog | Tina sends folder (one action) | **CRITICAL** — this is the bottleneck |
+| **Decision not made** | No deployment/build can start | Tina chooses which product first | **IMMEDIATE** — needed by 08:00 AM |
+| **Agent swarm research unclear** | Can't design agent orchestration | Moriah researches OpenClaw/clawdbot/moltbook | Done in parallel, 1 week |
+| **Desktop Claude files missing** | Can't templatize Claude Skill system for upsell | Tina sends Claude Created Files folder | Needed for course, but not blocking initial launch |
+
+---
+
+## EXECUTION ROADMAP
+
+### THIS WEEKEND (Saturday-Sunday)
+- **Saturday:** Transcripts received → Sanitizer + Extractor run (4 hours)
+- **Saturday afternoon:** Wisdom database ready
+- **Saturday evening-Sunday:** CoachTinaMarie built and deployed
+- **Sunday evening:** AI Entrepreneur Course live
+- **Result:** Two revenue streams active by Sunday night
+
+### NEXT WEEK (Monday-Friday)
+- **Mon-Tue:** Agent swarm research complete
+- **Tue-Wed:** CoachTinaMarie optimization + first customer onboarding
+- **Wed-Fri:** Course student success + first revenue reports
+- **Parallel:** Blog post auto-generation starts
+- **Result:** $77K+/month revenue running on its own
+
+### FOLLOWING WEEK (Week 2)
+- **Mon-Fri:** Agent swarms Phase 1 (core orchestration) built
+- **Parallel:** CoachTinaMarie and Course scaling (marketing starts)
+- **Result:** Foundation for infinite scaling in place
+
+---
+
+## RULES FOR EXECUTION
+
+1. **Excellence first** — Not speed, not shortcuts. Everything ships at production quality.
+2. **Anchor to THE_TRUTH.md** — Every 10,000 tokens, re-read it. This is the mission.
+3. **Don't speculate** — Wait for Tina's input (transcripts, decisions, approvals).
+4. **Document everything** — Auditable, transferable, transparent.
+5. **Honor the team** — Tina, Mark, Caleb, others. Not resources. Family.
+6. **Build for longevity** — These products need to work 10 years from now, not just this week.
+7. **Report progress** — Screenshot systems, log work, commit to GitHub. Prove operation.
+8. **Think systemically** — Each tier enables the next. Don't skip steps.
 
 ---
 
