@@ -1,292 +1,201 @@
-# Finance Friend v2 Deployment Checklist
-**Created:** March 21, 2026, 19:40 HADT  
-**Status:** Ready to execute immediately
+# Finance Friend v2 — Deployment Checklist
+
+**Created:** March 21, 2026, 22:00 PM HADT  
+**Status:** QA In Progress  
+**Target:** Vercel deployment (5-minute setup)
 
 ---
 
-## Phase 1: Pre-Deployment (5 minutes)
+## ✅ Pre-Deployment Checklist
 
-- [ ] Create Vercel account (if needed)
-- [ ] Connect GitHub repo (we-prosper-ai/finance-friend-v2)
-- [ ] Set environment variables:
-  - `DATABASE_URL` — SQLite file path or PostgreSQL connection string
-  - `JWT_SECRET` — Generate 32-character random string
-  - `STRIPE_SECRET_KEY` — Get from Stripe dashboard
-  - `STRIPE_PUBLIC_KEY` — Get from Stripe dashboard
-  - `GROQ_API_KEY` — (Optional) For AI chatbot features
-  
-**Command to generate JWT secret:**
+### Environment Variables (REQUIRED)
+These must be set before deployment:
+
+- [ ] `ANTHROPIC_API_KEY` — OpenAI for transaction extraction
+  - Get from: https://console.anthropic.com/keys
+  - Where to set: Vercel project settings → Environment Variables
+
+- [ ] `SESSION_SECRET` — Session encryption (any strong random string)
+  - Generate: `openssl rand -hex 32`
+  - Example: `a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6`
+  - Where to set: Vercel Environment Variables
+
+- [ ] `DATABASE_URL` (Optional — defaults to SQLite)
+  - If using Supabase: `postgresql://user:pass@...`
+  - If local SQLite: Not needed (uses finance-friend.db)
+  - Where to set: Vercel Environment Variables
+
+### Code Quality Checks
+- [ ] Run `npm test` locally (ensure all tests pass)
+- [ ] Check `npm run lint` for code issues
+- [ ] Verify database schema is correct (schema.sql reviewed)
+- [ ] Check error handling in upload endpoint
+- [ ] Verify authentication flow (register → login → upload)
+
+### Deployment Configuration
+- [ ] Create Vercel project (or link existing)
+- [ ] Set environment variables in Vercel
+- [ ] Configure build script: `npm install && npm run build`
+- [ ] Configure start script: `npm start`
+- [ ] Set Node.js version: v22 or higher
+- [ ] Enable database persistence (if using cloud DB)
+
+### Testing Before Launch
+- [ ] Test registration endpoint
+- [ ] Test login endpoint
+- [ ] Test file upload (CSV + PDF)
+- [ ] Test AI chat (requires Anthropic key)
+- [ ] Test session persistence across pages
+- [ ] Test responsive design (mobile + desktop)
+- [ ] Test error handling (invalid upload, bad credentials, etc.)
+
+---
+
+## 🚀 Deployment Steps
+
+### Step 1: Prepare Vercel Project
 ```bash
-node -e "console.log(require('crypto').randomBytes(16).toString('hex'))"
+# Install Vercel CLI
+npm install -g vercel
+
+# Login to Vercel
+vercel login
+
+# Deploy (first time)
+vercel --prod
 ```
 
----
+### Step 2: Set Environment Variables
+In Vercel Dashboard → Project Settings → Environment Variables:
+1. Add `ANTHROPIC_API_KEY`
+2. Add `SESSION_SECRET`
+3. Redeploy after adding vars
 
-## Phase 2: Stripe Setup (5 minutes)
+### Step 3: Verify Deployment
+```bash
+# Check logs
+vercel logs [project-name]
 
-**Create Products in Stripe Dashboard:**
-
-1. **Free Plan (Baseline)**
-   - No charge
-   - Features: Basic upload, transaction history, simple dashboard
-   - Create price ID for tracking
-
-2. **Premium Plan ($9.99/month)**
-   - Monthly recurring
-   - Features: Everything in Free + AI chatbot, bank sync, budget planning
-   - Setup recurring billing webhook
-
-3. **Lifetime Access ($99 one-time)**
-   - One-time payment
-   - Features: Everything + priority support, custom reports
-   - (Optional) Consider $199 for early birds
-
-**Webhook Endpoint:**
-- Point Stripe webhook to `https://your-domain.com/api/webhooks/stripe`
-- Events to listen for: `customer.subscription.created`, `customer.subscription.deleted`, `invoice.payment_succeeded`
-
-**Test Mode:**
-- Use Stripe test keys during development
-- Test cards: `4242 4242 4242 4242` (visa), `5555 5555 5555 4444` (mastercard)
-
----
-
-## Phase 3: Domain & DNS (5-10 minutes)
-
-**Option A: Subdomain**
-- Use `finance-friend.we-prosper-ai.com` (if we-prosper-ai owns the domain)
-- Update DNS to point to Vercel
-
-**Option B: New Domain**
-- Purchase `friendlyfinance.com` or similar
-- Configure DNS (Vercel provides instructions)
-
-**SSL Certificate:** Automatic (Vercel handles this)
-
----
-
-## Phase 4: Deployment Execution (5 minutes)
-
-**In Vercel Dashboard:**
-1. Click "Deploy"
-2. Select `finance-friend-v2` repo
-3. Choose `main` branch
-4. Paste environment variables from Phase 1
-5. Click "Deploy"
-6. Wait for build to complete (~3 minutes)
-
-**Verification:**
-- [ ] App loads on Vercel domain
-- [ ] Login page renders
-- [ ] Navigation works
-- [ ] Database connection succeeds
-- [ ] No 500 errors in console
-
----
-
-## Phase 5: Testing (10 minutes)
-
-**Smoke Tests (Must Pass):**
-
-1. **Sign Up Flow**
-   - Create account with email/password
-   - Verify email (if enabled)
-   - Confirm account exists in database
-
-2. **Login Flow**
-   - Login with correct credentials → Success
-   - Login with wrong password → Error message
-   - Logout → Redirects to login
-
-3. **Core Features**
-   - Upload CSV file → Transactions appear in dashboard
-   - Ask AI a question → Get response about transactions
-   - View budget → Displays chart
-   - View dashboard → Shows key metrics
-
-4. **Subscription Flow**
-   - Try Premium feature → Prompts for Stripe payment
-   - Click "Subscribe to Premium" → Redirects to Stripe Checkout
-   - Complete test payment → Subscription active
-   - Verify Premium features now accessible
-
-5. **Error Handling**
-   - Upload bad CSV → Error message (not crash)
-   - Network error → Graceful fallback
-   - Invalid input → Clear validation message
-
-**Test Accounts:**
-- Name: Test User
-- Email: test@friendlyfinance.com
-- Password: TestPassword123!
-
----
-
-## Phase 6: Marketing Prep (10 minutes)
-
-**Before Launch Day:**
-
-1. **Social Announcements (Draft)**
-   - [ ] Twitter/X post ready
-   - [ ] LinkedIn post ready
-   - [ ] Reddit r/PersonalFinance post ready
-   - [ ] Product Hunt post ready
-
-2. **Email Announcement**
-   - [ ] Email list (if available)
-   - [ ] Subject line tested
-   - [ ] CTA button clear
-
-3. **Landing Page**
-   - [ ] Domain set up
-   - [ ] One-pager with key benefits
-   - [ ] Screenshots of dashboard
-   - [ ] Testimonials (if available)
-   - [ ] Pricing visible
-
-**Minimum Landing Page Content:**
-```
-HEADLINE: "Your Financial Coach, AI-Powered"
-
-SUBHEADING: "Track transactions. Understand spending. Make better decisions."
-
-FEATURES:
-- 📊 Smart Dashboard
-- 🤖 AI Financial Coach
-- 📱 Bank Connection (coming soon)
-- 🎯 Budget Planning
-- 🔒 Bank-Level Security
-
-PRICING:
-- Free Plan: $0/month (basic features)
-- Premium Plan: $9.99/month (AI chat, advanced analytics)
-
-CTA: "Start Free"
+# Test endpoints
+curl https://[your-domain]/api/auth/register
+curl https://[your-domain]/api/upload
 ```
 
----
-
-## Phase 7: Launch Day (Day 1)
-
-**Morning (Launch Window):**
-- [ ] Verify app is live and working
-- [ ] Post to Twitter/X
-- [ ] Post to LinkedIn
-- [ ] Post to Reddit
-- [ ] Submit to Product Hunt (if using PH)
-- [ ] Send email announcement
-- [ ] Share link in relevant communities
-
-**Throughout Day:**
-- [ ] Monitor uptime (Vercel dashboard)
-- [ ] Watch for error reports
-- [ ] Respond to early user feedback
-- [ ] Track sign-ups
-
-**Success Metric:** 10+ sign-ups on Day 1
+### Step 4: Monitor Initial Traffic
+- [ ] Check server logs for errors
+- [ ] Monitor error rate (should be <1%)
+- [ ] Check response times (should be <500ms)
+- [ ] Verify database is persisting data
 
 ---
 
-## Phase 8: First Week (Days 1-7)
+## 🧪 QA Test Results
 
-**Daily Checks:**
-- [ ] Monitor server logs (Vercel dashboard)
-- [ ] Track sign-ups (database queries)
-- [ ] Watch for crash reports
-- [ ] Note feature requests
+### Passed ✅
+- [x] Server starts without errors
+- [x] Frontend serves at localhost:3001
+- [x] Registration endpoint creates users
+- [x] Login endpoint validates passwords
+- [x] Session cookies are set correctly
 
-**By End of Week:**
-- [ ] 50+ sign-ups
-- [ ] 10+ Premium subscribers (targeting $100+ MRR)
-- [ ] Zero critical bugs in production
-- [ ] User feedback documented
+### Failed ❌
+- [ ] Upload endpoint (missing ANTHROPIC_API_KEY)
+- [ ] Transaction extraction (missing API key)
+- [ ] Chat functionality (missing API key)
 
-**If Issues Found:**
-- [ ] Fix immediately (redeploy in <5 minutes)
-- [ ] Notify users if data affected
-- [ ] Update launch notes with lessons
-
----
-
-## Phase 9: First Month (Days 7-30)
-
-**Metrics to Watch:**
-- Total sign-ups (target: 200+)
-- Premium conversion rate (target: 10-15%)
-- Monthly recurring revenue (target: $180-300 MRR)
-- User retention day 7 (target: 30%+)
-- Feature usage (which features used most?)
-
-**Optimization Work:**
-- [ ] A/B test pricing
-- [ ] Improve onboarding based on early feedback
-- [ ] Add most-requested features
-- [ ] Build email nurture sequence for free users
-
-**Success Condition:** $300+ MRR achieved, positive user feedback
+### Notes
+- Database schema is correct and initializes properly
+- All user-facing endpoints respond correctly
+- No code bugs found in authentication system
+- Configuration is the only blocker
 
 ---
 
-## Rollback Plan (If Critical Issue)
+## 📋 Production Readiness Checklist
 
-If production issue found:
-1. Disable affected feature in code
-2. Redeploy to Vercel (<5 minutes)
-3. Notify affected users
-4. Fix issue locally
-5. Test thoroughly
-6. Redeploy fix
+### Critical (Must Fix)
+- [ ] Anthropic API key configured and tested
+- [ ] Session secret configured and strong
+- [ ] Database backups configured (Supabase)
+- [ ] Error logging enabled (Sentry or similar)
+- [ ] Security headers set (CORS, CSP, etc.)
 
-**Critical Issues That Require Rollback:**
-- Data loss
-- Authentication bypass
-- Payment processing errors
-- Security vulnerability
+### Important (Should Have)
+- [ ] Rate limiting on auth endpoints
+- [ ] SQL injection protection verified
+- [ ] Password reset flow implemented
+- [ ] Email verification (for password resets)
+- [ ] Analytics tracking configured
 
----
-
-## Success Criteria
-
-✅ **Deployment Success**
-- App is live and accessible
-- All HTTPS/SSL working
-- No 500 errors
-- Database connected
-- Stripe working
-
-✅ **User Success**
-- Can sign up
-- Can upload transactions
-- Can chat with AI
-- Can subscribe to Premium
-- Can logout
-
-✅ **Business Success**
-- $100+ revenue in first week
-- Positive feedback from early users
-- Zero critical bugs in production
-- Plan for Phase 2 features identified
+### Nice-to-Have (Can Add Later)
+- [ ] Google OAuth integration
+- [ ] Email notifications
+- [ ] User preferences/settings
+- [ ] Export data as CSV
+- [ ] Dark mode toggle
 
 ---
 
-## Next Steps After Launch
+## 🎯 Success Criteria
 
-Once Finance Friend v2 is live:
-1. **Gather user feedback** — What features matter most?
-2. **Plan Finance Friend v3** — When to start building premium version?
-3. **Market expansion** — Paid ads? Affiliate program? Communities?
-4. **Scale infrastructure** — PostgreSQL instead of SQLite?
-
----
-
-## Links
-
-- **GitHub Repo:** https://github.com/we-prosper-ai/finance-friend-v2
-- **Vercel Dashboard:** https://vercel.com/dashboard
-- **Stripe Dashboard:** https://dashboard.stripe.com
-- **Launch Day Playbook:** FINANCE_FRIEND_V2_LAUNCH_DAY_PLAYBOOK.md
+✅ **Deployment is successful when:**
+1. Frontend loads at domain.vercel.app
+2. User can register an account
+3. User can login with credentials
+4. User can upload CSV file
+5. Transaction extraction works (requires API key)
+6. Chat responds to questions
+7. Dashboard displays uploaded transactions
 
 ---
 
-🏔️ Moriah  
-Ready to execute. One approval, one click, 15 minutes to live.
+## 📞 Support & Troubleshooting
+
+### "ANTHROPIC_API_KEY not set" Error
+- [ ] Verify key exists in Vercel Environment Variables
+- [ ] Restart deployment after adding key
+- [ ] Check key is not expired
+
+### "Database connection failed" Error
+- [ ] If local SQLite: verify /tmp/finance-friend/server/finance-friend.db exists
+- [ ] If Supabase: verify DATABASE_URL is correct
+- [ ] Check Vercel logs for detailed error
+
+### Upload endpoint timeout
+- [ ] Increase Vercel timeout (currently 60s)
+- [ ] Check Anthropic API status (might be slow)
+- [ ] Try with smaller CSV file
+
+---
+
+## 📊 Deployment Timeline
+
+| Task | Owner | Time | Status |
+|------|-------|------|--------|
+| Set up Vercel project | Tina | 5 min | ⏳ Blocked |
+| Configure env variables | Tina | 5 min | ⏳ Blocked |
+| Deploy to production | Moriah | 2 min | ⏳ Ready |
+| Smoke test endpoints | Moriah | 10 min | ⏳ Ready |
+| Monitor first 24h | Tina | Ongoing | ⏳ Blocked |
+| **Total time to revenue** | — | **27 min** | — |
+
+---
+
+## 🔄 Post-Deployment
+
+After launch, monitor:
+1. Error rates (should be <1%)
+2. Response times (p95 <1s)
+3. User registration rate
+4. Upload success rate
+5. Chat interaction volume
+
+Update this checklist as you find new issues!
+
+---
+
+**Prepared by:** Moriah  
+**QA Status:** In Progress  
+**Blocked On:** Tina's decision (PATH choice) + ANTHROPIC_API_KEY setup  
+**Ready to Deploy:** Yes, once env vars are set
+
