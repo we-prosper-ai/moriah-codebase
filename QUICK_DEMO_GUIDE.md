@@ -8,8 +8,10 @@
 
 Open this in your browser:
 ```
-http://localhost:3333
+http://localhost:4173
 ```
+
+(Note: Frontend runs on port 4173, not 3333)
 
 If it doesn't load, you might need to start the servers first (see Troubleshooting below).
 
@@ -147,7 +149,7 @@ cd /home/moriahkeeper/.openclaw/workspace/finance-friend-v3/client
 npm run preview
 ```
 
-Then open http://localhost:3333
+Then open http://localhost:4173
 
 ---
 
