@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finance Friend - Your Money, Your Way</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --brand-primary: #3b82f6;
+      --brand-gold: #f59e0b;
+      --brand-green: #10b981;
+      --text-dark: #1f2937;
+      --text-light: #6b7280;
+      --bg-light: #f9fafb;
+      --bg-white: #ffffff;
+      --border: #e5e7eb;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: var(--text-dark);
+      background: var(--bg-white);
+    }
+
+    a { color: var(--brand-primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Navigation */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 2rem;
+      background: var(--bg-white);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--brand-primary);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--text-dark);
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    .nav-buttons {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .btn-login { padding: 0.6rem 1.2rem; border: 1px solid var(--border); border-radius: 0.5rem; background: var(--bg-white); cursor: pointer; font-weight: 500; }
+    .btn-signup { padding: 0.6rem 1.5rem; background: var(--brand-green); color: white; border: none; border-radius: 0.5rem; cursor: pointer; font-weight: 600; }
+    .btn-signup:hover { background: #059669; }
+
+    /* Hero */
+    .hero {
+      padding: 6rem 2rem;
+      text-align: center;
+      background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+      color: var(--text-dark);
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      color: var(--text-light);
+      margin-bottom: 2rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      margin-bottom: 3rem;
+    }
+
+    .btn-primary { padding: 1rem 2.5rem; background: var(--brand-green); color: white; border: none; border-radius: 0.5rem; font-size: 1.1rem; font-weight: 600; cursor: pointer; }
+    .btn-primary:hover { background: #059669; }
+
+    .btn-secondary { padding: 1rem 2.5rem; background: var(--bg-white); color: var(--brand-primary); border: 2px solid var(--brand-primary); border-radius: 0.5rem; font-size: 1.1rem; font-weight: 600; cursor: pointer; }
+    .btn-secondary:hover { background: var(--brand-primary); color: white; }
+
+    /* Problem section */
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .problem-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .problem-card {
+      background: var(--bg-light);
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      border-left: 4px solid var(--brand-gold);
+    }
+
+    .problem-card p {
+      color: var(--text-light);
+      font-style: italic;
+    }
+
+    /* Features */
+    .features {
+      background: var(--bg-light);
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .feature {
+      background: white;
+      padding: 2rem;
+      border-radius: 0.5rem;
+      border: 1px solid var(--border);
+    }
+
+    .feature-icon {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .feature h3 {
+      margin-bottom: 0.5rem;
+      color: var(--text-dark);
+    }
+
+    .feature p {
+      color: var(--text-light);
+      font-size: 0.95rem;
+    }
+
+    /* Pricing */
+    .pricing-section {
+      background: white;
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .pricing-card {
+      border: 1px solid var(--border);
+      border-radius: 0.5rem;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .pricing-card.featured {
+      border: 2px solid var(--brand-green);
+      transform: scale(1.05);
+      box-shadow: 0 10px 30px rgba(16, 185, 129, 0.1);
+    }
+
+    .price {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: var(--brand-green);
+      margin: 1rem 0;
+    }
+
+    .pricing-features {
+      list-style: none;
+      margin: 1.5rem 0;
+      text-align: left;
+    }
+
+    .pricing-features li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-light);
+      font-size: 0.95rem;
+    }
+
+    .pricing-features li:before {
+      content: "✓ ";
+      color: var(--brand-green);
+      font-weight: bold;
+      margin-right: 0.5rem;
+    }
+
+    /* CTA */
+    .cta-section {
+      background: linear-gradient(135deg, var(--brand-primary), var(--brand-green));
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .cta-section h2 {
+      color: white;
+      margin-bottom: 1rem;
+    }
+
+    .cta-section p {
+      color: rgba(255,255,255,0.9);
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn-cta { padding: 1rem 2.5rem; background: white; color: var(--brand-primary); border: none; border-radius: 0.5rem; font-weight: 600; cursor: pointer; font-size: 1rem; }
+    .btn-cta:hover { background: rgba(255,255,255,0.9); }
+
+    /* Footer */
+    footer {
+      background: var(--text-dark);
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    footer a { color: var(--brand-green); }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2rem; }
+      .nav-links { display: none; }
+      .hero-buttons { flex-direction: column; }
+      .pricing-card.featured { transform: scale(1); }
+      .logo { font-size: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">💰 Finance Friend</div>
+    <ul class="nav-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <div class="nav-buttons">
+      <button class="btn-login">Log In</button>
+      <button class="btn-signup">Sign Up</button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Your finances. Your way.</h1>
+    <p>Smart tracking that actually gets you. Bank statements meet real life.</p>
+    <div class="hero-buttons">
+      <button class="btn-primary">Start Free</button>
+      <button class="btn-secondary">See How It Works</button>
+    </div>
+  </section>
+
+  <!-- Problem Section -->
+  <section class="section">
+    <h2>The Problem</h2>
+    <div class="problem-grid">
+      <div class="problem-card">
+        <p>"Most finance apps feel like spreadsheets with better UX. They're great at math. They're terrible at you."</p>
+      </div>
+      <div class="problem-card">
+        <p>"I don't just have a budget. I have a life. And a question: Am I charging enough?"</p>
+      </div>
+      <div class="problem-card">
+        <p>"Tax season shouldn't require an accountant, a spreadsheet, and a week of my time."</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="section features" id="features">
+    <h2>What Finance Friend Does</h2>
+    <div class="feature-grid">
+      <div class="feature">
+        <div class="feature-icon">📊</div>
+        <h3>Understands Your Bank</h3>
+        <p>Upload a statement or download directly. We see what you earned, what you spent, and what actually matters.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">❓</div>
+        <h3>Asks the Right Questions</h3>
+        <p>Not "where did every dollar go?" but "What's your hourly rate? Are you working enough? Should you be?"</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🧾</div>
+        <h3>Makes Taxes Painless</h3>
+        <p>Upload statements. We classify transactions automatically. Print a report in 10 seconds.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🤖</div>
+        <h3>Your AI Coach</h3>
+        <p>Ask anything: "What's my monthly revenue trend?" "Should I charge more?" Real methodology, real answers.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="section pricing-section" id="pricing">
+    <h2>Simple Pricing</h2>
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <h3>Free</h3>
+        <div class="price">$0</div>
+        <p>Get started</p>
+        <ul class="pricing-features">
+          <li>Upload statements</li>
+          <li>Basic tracking</li>
+          <li>View your data</li>
+          <li>No credit card needed</li>
+        </ul>
+        <button class="btn-secondary">Try Free</button>
+      </div>
+      <div class="pricing-card featured">
+        <h3>Premium</h3>
+        <div class="price">$9.99<span style="font-size: 0.6em; color: var(--text-light);">/month</span></div>
+        <p>Everything + Coach</p>
+        <ul class="pricing-features">
+          <li>AI Coach (ask anything)</li>
+          <li>Tax classification</li>
+          <li>Advanced reports</li>
+          <li>Bank sync (coming soon)</li>
+          <li>Cancel anytime</li>
+        </ul>
+        <button class="btn-primary">Upgrade to Premium</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <h2 id="faq">Questions?</h2>
+    <div style="max-width: 700px; margin: 0 auto;">
+      <div style="margin-bottom: 2rem;">
+        <h3 style="margin-bottom: 0.5rem;">Where does my data live?</h3>
+        <p style="color: var(--text-light);">Your data stays on Finance Friend's servers, encrypted and secure. You can export anytime.</p>
+      </div>
+      <div style="margin-bottom: 2rem;">
+        <h3 style="margin-bottom: 0.5rem;">Can I try free forever?</h3>
+        <p style="color: var(--text-light);">Yes. You get full tracking forever. You just won't have the AI coach. Most people upgrade within 2-3 uses.</p>
+      </div>
+      <div style="margin-bottom: 2rem;">
+        <h3 style="margin-bottom: 0.5rem;">Can I cancel anytime?</h3>
+        <p style="color: var(--text-light);">Yes. No contracts. Cancel in one click. We're not trying to trap you.</p>
+      </div>
+      <div style="margin-bottom: 2rem;">
+        <h3 style="margin-bottom: 0.5rem;">Is my data really safe?</h3>
+        <p style="color: var(--text-light);">Yes. Encrypted in transit and at rest. Full compliance with payment card standards. Your security is non-negotiable.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <h2>Ready?</h2>
+    <p>Start tracking for free. No credit card. No commitments. Just answers.</p>
+    <button class="btn-cta">Get Started Now</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Finance Friend. Made with ❤️ for people who actually work.</p>
+    <div style="margin-top: 1rem; font-size: 0.9rem;">
+      <a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="mailto:hello@finance-friend.app">Contact</a>
+    </div>
+  </footer>
+
+  <script>
+    // Button handlers
+    document.querySelectorAll('.btn-signup, .btn-primary, button:contains("Start Free"), button:contains("Upgrade to Premium"), button:contains("Try Free"), .btn-cta').forEach(btn => {
+      btn.addEventListener('click', function() {
+        // Redirect to signup or login
+        window.location.href = '/signup';
+      });
+    });
+
+    document.querySelectorAll('.btn-login').forEach(btn => {
+      btn.addEventListener('click', function() {
+        window.location.href = '/login';
+      });
+    });
+  </script>
+</body>
+</html>
