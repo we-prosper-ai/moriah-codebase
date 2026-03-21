@@ -1,0 +1,138 @@
+[
+  {
+    "id": "teach-001",
+    "title": "The Three Revenue Models",
+    "core_concept": "All sustainable businesses use one of three models: Sell Time (1:1 coaching), Sell Product (digital courses/software), or Sell Systems (delegated execution). You can't mix time and scale.",
+    "insight": "Most entrepreneurs get stuck because they try to serve everyone 1:1. The ceiling is your personal capacity (6 hours/week max). To 10x revenue, you must move from Time to Product or Systems.",
+    "quotes": [
+      "You're trading time for money. That's the ceiling. $250K/year with 6 coaching clients, and you're burnt out.",
+      "Products scale. Systems scale. You don't. Pick one and own it completely.",
+      "The leap from $100K to $1M isn't more time. It's a different business model."
+    ],
+    "frameworks": ["Three Revenue Models", "Time vs. Scale"],
+    "action_steps": [
+      "Audit your current revenue: what % comes from Time, Product, Systems?",
+      "Pick your primary model (what you're best at)",
+      "Build systems to support that ONE model (don't hybrid)"
+    ],
+    "case_studies": [
+      "Sarah (Time): 6 clients × $250K = Burnt out, wants to scale",
+      "Marcus (Product): Digital course + community = Passive revenue",
+      "Jordan (Systems): Delegates 90% of execution, 10% strategy = Stress-free 7 figures"
+    ],
+    "module": "Fundamentals",
+    "prerequisites": ["None"],
+    "difficulty": "beginner",
+    "estimated_time_to_internalize": "20",
+    "next_teachings": ["teach-002", "teach-003"]
+  },
+  {
+    "id": "teach-002",
+    "title": "The Four Currencies Framework",
+    "core_concept": "Money, Time, Energy, and Freedom are the real currencies. Most people chase money and lose Time/Energy/Freedom. True wealth is balancing all four.",
+    "insight": "You don't optimize for dollars alone. You optimize for a lifestyle. 1-10 score yourself on each currency. The gaps show where you're out of balance.",
+    "quotes": [
+      "Rich but exhausted? You optimized for money, sacrificed time and energy.",
+      "Freelance freedom? Sounds good until you're working 80 hours to stay alive.",
+      "The goal isn't to maximize money. It's to maximize freedom while keeping time and energy for what matters."
+    ],
+    "frameworks": ["Four Currencies", "Lifestyle Design"],
+    "action_steps": [
+      "Score yourself 1-10 on each currency: Money, Time, Energy, Freedom",
+      "Identify the lowest-scoring currency (your constraint)",
+      "Design ONE change to improve your lowest currency by 1 point"
+    ],
+    "case_studies": [
+      "Sarah: 8 Money, 2 Time, 3 Energy, 4 Freedom = Time is the blocker",
+      "Marcus: 4 Money, 7 Time, 6 Energy, 8 Freedom = Money is the blocker",
+      "Jordan: 9 Money, 8 Time, 7 Energy, 9 Freedom = Balanced, only energy slightly low"
+    ],
+    "module": "Fundamentals",
+    "prerequisites": ["teach-001"],
+    "difficulty": "intermediate",
+    "estimated_time_to_internalize": "30",
+    "next_teachings": ["teach-004", "teach-005"]
+  },
+  {
+    "id": "teach-003",
+    "title": "Finding Your Unfair Advantage",
+    "core_concept": "Your unfair advantage is the intersection of what you're GOOD at, what you LOVE, and what people NEED. Everything else is busywork.",
+    "insight": "Stop trying to be good at everything. You have maybe 2-3 things that are your actual superpowers. Double down on those. Hire or automate the rest.",
+    "quotes": [
+      "Your unfair advantage isn't your degree. It's the 23 years of wisdom in your brain.",
+      "If 10 other people could do your job as well as you, it's not an advantage. It's commoditized.",
+      "Find the thing that would take someone else 10 years to replicate. That's your edge."
+    ],
+    "frameworks": ["Unfair Advantage", "Ikigai", "Zone of Genius"],
+    "action_steps": [
+      "List 5 things you're exceptional at (top 1% of people)",
+      "List 5 things people consistently pay you for",
+      "Find the intersection. That's your unfair advantage.",
+      "Everything else: delegate, outsource, or kill"
+    ],
+    "case_studies": [
+      "Tina: 23 years wisdom + direct teaching + community building = Unfair advantage in coaching",
+      "Marcus: Technical depth + business acumen + teaching ability = Unfair advantage in tech education",
+      "Jordan: Execution speed + pattern recognition + systems building = Unfair advantage in ops"
+    ],
+    "module": "Positioning",
+    "prerequisites": ["teach-001"],
+    "difficulty": "intermediate",
+    "estimated_time_to_internalize": "40",
+    "next_teachings": ["teach-006"]
+  },
+  {
+    "id": "teach-004",
+    "title": "Leverage: How to Stop Working",
+    "core_concept": "Leverage is doing 1 hour of work that creates 10 hours of value. It's the only way to escape time-for-money. Tools, systems, people, products, and networks are leverage.",
+    "insight": "Most people stay stuck because they trade time directly. Leverage breaks that. Your leverage unlocks your time.",
+    "quotes": [
+      "You working 10 hours a week earning $250K? That's leverage. Your knowledge is the asset.",
+      "Without leverage, you hit a ceiling. With leverage, the ceiling is infinite.",
+      "The person who makes 10x more than you isn't 10x smarter. They have 10x more leverage."
+    ],
+    "frameworks": ["5 Types of Leverage", "System Thinking"],
+    "action_steps": [
+      "Identify your current leverage: tools, systems, people, products",
+      "Pick ONE type to increase (e.g., build a product, hire a VA, create a system)",
+      "Measure: How many hours of value per hour of effort?"
+    ],
+    "case_studies": [
+      "Sarah (1:1 coach): 1 hour coaching = 1 hour value. Needs leverage.",
+      "Marcus (course + coaching): 1 hour course = 100 students × benefit. High leverage.",
+      "Jordan (delegated system): 1 hour strategy = team executes 40 hours. Extreme leverage."
+    ],
+    "module": "Systems",
+    "prerequisites": ["teach-003"],
+    "difficulty": "advanced",
+    "estimated_time_to_internalize": "50",
+    "next_teachings": ["teach-007"]
+  },
+  {
+    "id": "teach-005",
+    "title": "Value-Based Pricing (Not Time-Based)",
+    "core_concept": "Price based on value delivered, not hours spent. A 30-minute decision that saves someone $100K is worth way more than a 10-hour project that delivers $2K.",
+    "insight": "If you're pricing by the hour, you're leaving 10-100x money on the table. Value-based pricing aligns your incentives: you want to work fast and smart, not slow and long.",
+    "quotes": [
+      "You charge $150/hour. That's your ceiling. Switch to value-based, and there's no ceiling.",
+      "$77/month for unlimited coaching from someone with 23 years of wisdom? That's massive value. Price accordingly.",
+      "Time-based pricing rewards inefficiency. Value-based pricing rewards results."
+    ],
+    "frameworks": ["Value Ladder", "Positioning"],
+    "action_steps": [
+      "Stop thinking in hours. Start thinking in outcomes.",
+      "Ask: What's the outcome worth to the customer? Price at 10-20% of that value.",
+      "Test: Raise your price 50%. What happens?"
+    ],
+    "case_studies": [
+      "Sarah: $150/hour × 10 hours = $1,500. Value-based: Client's problem worth $50K → Price: $7,500+",
+      "Marcus: Course with $100K/year outcome → Price: $1,000-$3,000 (value-based, not hourly)",
+      "Jordan: CFO work worth $500K/year in value → Charge $50-100K/year (10-20% of value)"
+    ],
+    "module": "Pricing",
+    "prerequisites": ["teach-001", "teach-003"],
+    "difficulty": "advanced",
+    "estimated_time_to_internalize": "45",
+    "next_teachings": ["teach-006"]
+  }
+]
