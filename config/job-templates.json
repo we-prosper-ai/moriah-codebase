@@ -1,0 +1,169 @@
+{
+  "job_templates": {
+    "video_script": {
+      "agent": "video_producer",
+      "title_template": "Write video script: {TOPIC}",
+      "description": "Transform wisdom into engaging educational video script",
+      "requirements": [
+        "Story-first hook (0:00-0:10)",
+        "Clear core concept explanation",
+        "Specific real-world example with numbers/details",
+        "Actionable next step for viewers",
+        "Strong CTA that drives engagement"
+      ],
+      "success_criteria": [
+        "Hook is compelling and makes viewers want to continue",
+        "Concept explained clearly (teenager could understand)",
+        "Example includes specific details (names, numbers, dates)",
+        "Action step is obvious and achievable",
+        "Tone matches Tina's teaching style",
+        "Length is 800-1200 words (~4-5 minutes)",
+        "No grammatical errors",
+        "Ready for professional video production"
+      ],
+      "deadline_hours": 4,
+      "priority": "high",
+      "model": "claude-3-5-sonnet",
+      "tools": [
+        "firecrawl_search",
+        "image_generation",
+        "github_commit"
+      ],
+      "output_path": "team-videos/{TOPIC}-script.md",
+      "quality_target": 4.0
+    },
+    "email_sequence": {
+      "agent": "copywriter",
+      "title_template": "Write email sequence: {TOPIC} launch",
+      "description": "Create 5-email launch sequence to drive product sales",
+      "requirements": [
+        "Email 1: Problem identification and hook",
+        "Email 2: Solution introduction with benefits",
+        "Email 3: Social proof and testimonials",
+        "Email 4: Address common objections",
+        "Email 5: Strong CTA and urgency"
+      ],
+      "success_criteria": [
+        "Subject lines are compelling (>30% open rate target)",
+        "Email 1 creates problem awareness",
+        "Email 2 introduces solution clearly",
+        "Email 3 builds credibility with proof",
+        "Email 4 removes buying objections",
+        "Email 5 has clear CTA and urgency",
+        "Tone is conversational and authentic",
+        "No unsubscribe is natural",
+        "A/B variant provided for subject lines"
+      ],
+      "deadline_hours": 3,
+      "priority": "high",
+      "model": "claude-3-5-sonnet",
+      "tools": [
+        "firecrawl_search",
+        "gemini_api",
+        "github_commit"
+      ],
+      "output_path": "team-copy/{TOPIC}-email-sequence.md",
+      "quality_target": 4.5
+    },
+    "design_brief": {
+      "agent": "graphics_designer",
+      "title_template": "Create design brief: {TOPIC}",
+      "description": "Create comprehensive design brief for landing page/product assets",
+      "requirements": [
+        "Clear purpose and audience description",
+        "Visual style guide (colors, typography, imagery)",
+        "Layout specifications",
+        "Accessibility requirements (WCAG AA)",
+        "Asset specifications for contractor handoff",
+        "Brand consistency checklist"
+      ],
+      "success_criteria": [
+        "Contractor could execute from brief without questions",
+        "All technical specs are precise (dimensions, file formats)",
+        "Accessibility requirements are detailed and WCAG AA compliant",
+        "Color palette uses specific hex codes",
+        "Typography choices are justified",
+        "Visual metaphors clarify complexity",
+        "Brand consistency verified",
+        "File optimization requirements are clear"
+      ],
+      "deadline_hours": 4,
+      "priority": "medium",
+      "model": "claude-3-5-sonnet",
+      "tools": [
+        "firecrawl_search",
+        "gemini_image_generation",
+        "github_commit"
+      ],
+      "output_path": "team-designs/{TOPIC}-brief.md",
+      "quality_target": 4.0
+    },
+    "course_structure": {
+      "agent": "course_architect",
+      "title_template": "Design course: {TOPIC}",
+      "description": "Create complete course structure with modules, lessons, and learning outcomes",
+      "requirements": [
+        "Clear overall course transformation goal",
+        "5-7 modules with clear progression",
+        "3-4 lessons per module",
+        "Specific learning outcomes per lesson",
+        "Mix of teaching methods (video, text, exercises)",
+        "Capstone project that demonstrates mastery",
+        "Time estimates for each component"
+      ],
+      "success_criteria": [
+        "Course goal is transformational (not feature-list)",
+        "Target audience is clearly defined",
+        "Prerequisites are explicit",
+        "Learning outcomes use action verbs (can do X, not understands Y)",
+        "Progression is logical and scaffolded",
+        "Teaching methods are varied",
+        "Exercises are hands-on and relevant",
+        "Capstone demonstrates real mastery",
+        "Time estimates are realistic",
+        "Ready for video/content team production"
+      ],
+      "deadline_hours": 6,
+      "priority": "high",
+      "model": "claude-3-5-sonnet",
+      "tools": [
+        "firecrawl_search",
+        "gemini_api",
+        "github_commit"
+      ],
+      "output_path": "team-courses/{TOPIC}-structure.md",
+      "quality_target": 4.0
+    }
+  },
+  "feedback_scoring": {
+    "5_stars": {
+      "meaning": "Perfect - ready to publish immediately",
+      "agent_action": "Celebrate! Use as reference for future work.",
+      "revision_needed": false
+    },
+    "4_stars": {
+      "meaning": "Very good - minor tweaks and ready",
+      "agent_action": "Make suggested improvements, submit again",
+      "revision_needed": true,
+      "max_revisions": 1
+    },
+    "3_stars": {
+      "meaning": "Good foundation - needs significant work",
+      "agent_action": "Revise addressing all feedback points",
+      "revision_needed": true,
+      "max_revisions": 2
+    },
+    "2_stars": {
+      "meaning": "Needs major changes - reassess approach",
+      "agent_action": "Request clarification from Tina, restart with new direction",
+      "revision_needed": true,
+      "max_revisions": 3
+    },
+    "1_star": {
+      "meaning": "Not usable - start over",
+      "agent_action": "Request detailed feedback before restarting",
+      "revision_needed": true,
+      "max_revisions": 3
+    }
+  }
+}
