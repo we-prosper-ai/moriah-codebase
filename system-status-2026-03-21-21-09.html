@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Moriah Systems Status - 21:09 UTC</title>
+    <style>
+        body { font-family: monospace; background: #0a0e27; color: #00ff00; margin: 0; padding: 20px; }
+        .container { max-width: 800px; margin: 0 auto; }
+        .header { text-align: center; border-bottom: 2px solid #00ff00; padding-bottom: 10px; }
+        .system { background: #1a2a4a; padding: 15px; margin: 15px 0; border-left: 4px solid #00ff00; }
+        .system.running { border-left-color: #00ff00; }
+        .system.blocked { border-left-color: #ffaa00; }
+        .status-ok { color: #00ff00; font-weight: bold; }
+        .status-blocked { color: #ffaa00; font-weight: bold; }
+        code { background: #0a0e27; padding: 2px 5px; }
+        .time { color: #888; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏔️ Moriah Autonomous Loop</h1>
+            <p class="time">Friday March 21, 2026 — 21:09 UTC (9:09 PM HADT)</p>
+        </div>
+
+        <div class="system running">
+            <h3>FINANCE FRIEND V3 BACKEND</h3>
+            <p><span class="status-ok">✓ RUNNING</span></p>
+            <p>Port: 3777 | PID: 106578 | Uptime: 2h 20m</p>
+            <p>Health: <code>{"status":"ok","timestamp":"2026-03-21T06:09:19.956Z","version":"3.0.0"}</code></p>
+            <p>Phase: Phase 1 complete ✓ | Phase 2: Ready (blocked on Tina's blessing)</p>
+        </div>
+
+        <div class="system running">
+            <h3>TEAM AGENT BOARD BACKEND</h3>
+            <p><span class="status-ok">✓ RUNNING</span></p>
+            <p>Port: 3888 | PID: 115085 | Uptime: 57m</p>
+            <p>Health: <code>{"status":"ok","version":"1.0.0","phase":"Phase 1 MVP"}</code></p>
+            <p>Phase: Phase 1 complete ✓ | Phase 2: Ready (awaiting priority decision)</p>
+        </div>
+
+        <div class="system blocked">
+            <h3>BLOCKERS</h3>
+            <p><span class="status-blocked">⊙ AWAITING INPUT</span></p>
+            <ul>
+                <li><strong>Finance Friend:</strong> Tina needs to read FINANCE_FRIEND_V3_QUICK_REVIEW.md and bless v3 architecture</li>
+                <li><strong>Team Board:</strong> Tina needs to decide: parallel dev or sequential (after Finance Friend Phase 2)</li>
+            </ul>
+        </div>
+
+        <div class="system">
+            <h3>HIGHEST-VALUE WORK RIGHT NOW</h3>
+            <ol>
+                <li>Phase 2 scaffolding ✓ (complete)</li>
+                <li>Test data fixtures ✓ (complete)</li>
+                <li>All documentation ready ✓</li>
+                <li>GitHub commits current ✓</li>
+            </ol>
+            <p><strong>Status:</strong> Both products ready for Phase 2. Systems stable. Awaiting Tina's decisions.</p>
+        </div>
+
+        <footer style="text-align: center; margin-top: 30px; color: #555; font-size: 0.85em;">
+            Last heartbeat check: 21:09 UTC | Next check: ~21:24 UTC (15m interval)<br>
+            <code>Moriah Autonomous Loop — Raspberry Pi + OpenClaw</code>
+        </footer>
+    </div>
+</body>
+</html>
