@@ -1,0 +1,61 @@
+[1;36m[06:57:02][0m 🚀 TRANSCRIPT INGESTION — Starting automation
+[1;36m[06:57:02][0m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[0;32m✅ Found 1 transcript files[0m
+[1;36m[06:57:02][0m Output directory: /home/moriahkeeper/.openclaw/workspace/wisdom-database
+[1;36m[06:57:02][0m 
+[1;36m[06:57:02][0m 🛡️ PHASE 1 — Transcript Sanitizer (PII removal & metadata extraction)
+[1;36m[06:57:02][0m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[0;33m⚠️ Sanitizer package not found. Checking for TS version...[0m
+[1;36m[06:57:02][0m Sanitizing transcripts...
+[0;32m✅ Sanitized 1 transcripts in 0s[0m
+🏔️ Moriah — Showing Work (2026-03-21 06:57:02)
+✅ Finance Friend running on http://localhost:3001
+Screenshot saved: /home/moriahkeeper/.openclaw/workspace/ff-work-session-1774108622.png
+Logged to: /home/moriahkeeper/.openclaw/workspace/memory/2026-03-21.md
+[1;36m[06:57:07][0m 
+[1;36m[06:57:07][0m 🧠 PHASE 2 — Wisdom Extraction (teachings, insights, structures)
+[1;36m[06:57:07][0m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[1;36m[06:57:07][0m Extracting structured teachings from sanitized transcripts...
+[1;36m[06:57:07][0m Creating index from extracted teachings...
+[0;32m✅ Extracted teachings from 1 files in 0s[0m
+🏔️ Moriah — Showing Work (2026-03-21 06:57:07)
+✅ Finance Friend running on http://localhost:3001
+Screenshot saved: /home/moriahkeeper/.openclaw/workspace/ff-work-session-1774108627.png
+Logged to: /home/moriahkeeper/.openclaw/workspace/memory/2026-03-21.md
+[1;36m[06:57:12][0m 
+[1;36m[06:57:12][0m 🗄️ PHASE 3 — Database Assembly & Indexing
+[1;36m[06:57:12][0m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[0;32m✅ Database assembled in 0s[0m
+[1;36m[06:57:12][0m 
+[1;36m[06:57:12][0m ✓ PHASE 4 — Quality Assurance & Verification
+[1;36m[06:57:12][0m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ Sanitized files: 1
+✅ Teachings database: Found
+✅ Index created: Found
+✅ Manifest created: Found
+
+[0;32m✅ QA checks passed[0m
+🏔️ Moriah — Showing Work (2026-03-21 06:57:12)
+✅ Finance Friend running on http://localhost:3001
+Screenshot saved: /home/moriahkeeper/.openclaw/workspace/ff-work-session-1774108632.png
+Logged to: /home/moriahkeeper/.openclaw/workspace/memory/2026-03-21.md
+[1;36m[06:57:17][0m 
+[1;36m[06:57:17][0m 📊 FINAL SUMMARY
+[1;36m[06:57:17][0m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[1;36m[06:57:17][0m 
+[1;36m[06:57:17][0m ✅ INGESTION COMPLETE
+[1;36m[06:57:17][0m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[1;36m[06:57:17][0m 
+[1;36m[06:57:17][0m 📍 Output location: /home/moriahkeeper/.openclaw/workspace/wisdom-database/
+[1;36m[06:57:17][0m 📋 Summary: /home/moriahkeeper/.openclaw/workspace/wisdom-database/INGESTION_SUMMARY.md
+[1;36m[06:57:17][0m 📝 Full log: /home/moriahkeeper/.openclaw/workspace/transcript-ingestion-2026-03-21_06:57:02.log
+[1;36m[06:57:17][0m 
+[1;36m[06:57:17][0m 🚀 Next step: Decide which product to build first
+[1;36m[06:57:17][0m    • CoachTinaMarie (AI coach, $77K+/month)
+[1;36m[06:57:17][0m    • AI Entrepreneur Course ($888 + $77/month)
+[1;36m[06:57:17][0m    • Both in parallel ($2.8M+/year potential)
+[1;36m[06:57:17][0m 
+🏔️ Moriah — Showing Work (2026-03-21 06:57:17)
+✅ Finance Friend running on http://localhost:3001
+Screenshot saved: /home/moriahkeeper/.openclaw/workspace/ff-work-session-1774108637.png
+Logged to: /home/moriahkeeper/.openclaw/workspace/memory/2026-03-21.md
