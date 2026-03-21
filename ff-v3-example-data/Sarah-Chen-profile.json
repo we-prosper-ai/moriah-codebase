@@ -1,0 +1,53 @@
+{
+  "user": {
+    "name": "Sarah Chen",
+    "email": "sarah.chen@example.com",
+    "occupation": "Software Engineer",
+    "employment_status": "Employed",
+    "profile_description": "Tech worker, stable income, wants to optimize savings"
+  },
+  "financial_snapshot": {
+    "monthly_income": 8500,
+    "monthly_expenses_avg": 5950,
+    "savings_rate": "30%",
+    "currency": "USD",
+    "timezone": "America/Los_Angeles"
+  },
+  "currencies": {
+    "money": {
+      "current": 25500,
+      "desired": 51000,
+      "alignment": "70%"
+    },
+    "time": {
+      "current": 45,
+      "desired": 50,
+      "alignment": "90%",
+      "notes": "hours per week spent on valued work"
+    },
+    "energy": {
+      "current": 7,
+      "desired": 9,
+      "alignment": "78%",
+      "notes": "self-rated energy level 1-10"
+    },
+    "freedom": {
+      "current": 6,
+      "desired": 9,
+      "alignment": "67%",
+      "notes": "ability to make choices freely"
+    }
+  },
+  "tax_profile": {
+    "status": "Employed",
+    "estimated_tax_rate": "22%",
+    "business_deductions": 0,
+    "quarterly_payments": false
+  },
+  "goals": [
+    "Build 6-month emergency fund",
+    "Save for home down payment",
+    "Optimize tax strategy",
+    "Achieve better work-life balance"
+  ]
+}

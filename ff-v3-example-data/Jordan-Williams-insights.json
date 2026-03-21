@@ -1,0 +1,64 @@
+{
+  "user_name": "Jordan Williams",
+  "dashboard_metrics": {
+    "total_income_6mo": 49500,
+    "total_expenses_6mo": 34675,
+    "net_savings_6mo": 14825,
+    "average_monthly_expense": 5779,
+    "savings_rate": "30%",
+    "largest_category": "Housing (26%)",
+    "trend": "Improving"
+  },
+  "category_breakdown": {
+    "Housing": {
+      "amount": 9000,
+      "percentage": 26,
+      "trend": "Stable"
+    },
+    "Food": {
+      "amount": 6850,
+      "percentage": 20,
+      "trend": "Slightly increasing"
+    },
+    "Transportation": {
+      "amount": 2940,
+      "percentage": 8,
+      "trend": "Stable"
+    },
+    "Utilities": {
+      "amount": 890,
+      "percentage": 2.5,
+      "trend": "Seasonal"
+    },
+    "Healthcare": {
+      "amount": 550,
+      "percentage": 1.5,
+      "trend": "Variable"
+    },
+    "Subscriptions": {
+      "amount": 960,
+      "percentage": 2.8,
+      "trend": "Stable"
+    },
+    "Shopping": {
+      "amount": 7900,
+      "percentage": 23,
+      "trend": "Holiday spike visible"
+    },
+    "Other": {
+      "amount": 4585,
+      "percentage": 13.2,
+      "trend": "Variable"
+    }
+  },
+  "recommendations": [
+    "You're spending 20% on food. Industry average is 12-15%. Consider meal planning.",
+    "Your shopping category jumped in December. Stay aware of seasonal patterns.",
+    "Great savings rate! You're on track for emergency fund in 4-5 months.",
+    "Consider setting up automatic rent payment to save time."
+  ],
+  "alerts": [
+    "Electricity bill was higher in November/December (seasonal expected)",
+    "Large purchase detected: 99 electronics on Feb 20"
+  ]
+}
