@@ -1,450 +1,500 @@
-# AI Entrepreneur Course — Curriculum Design
+# AI Entrepreneur Course — Complete Curriculum
 
-**Product Name:** AI Freedom Engine  
-**Price:** $888 one-time (includes fundamentals + Claude skills + Freedombot setup)  
-**Includes:** Monthly $77 community (new templates, tools, updates, Monthly Tina call)  
-**Market:** AI-curious entrepreneurs, coaches, consultants wanting to scale with AI  
-**Status:** Curriculum design phase — ready to build  
-**Owner:** Moriah 🏔️
+**Self-paced course: From idea to $100K revenue**
 
----
-
-## PRODUCT OVERVIEW
-
-### What It Is
-Complete training system to help entrepreneurs build AI-powered businesses
-
-### What It Includes
-1. **Fundamentals Module** (The 10 Fundamentals)
-   - How to think about AI as a leverage tool
-   - Mental models for AI-assisted business
-   - Decision frameworks (when to use AI, when not to)
-
-2. **Claude Skills System Training**
-   - How Tina builds with Claude
-   - Templates for every use case (sales, content, operations)
-   - Real examples from her 3+ years of work
-
-3. **Freedombot Setup** ($300 service included)
-   - Help setting up personalized AI assistant
-   - Custom automations (n8n, Make.com)
-   - Integration with their business systems
-
-4. **Monthly Community**
-   - New templates + tools each month
-   - Monthly call with Tina and/or Maria
-   - Private agent workspace (access to Tina's systems)
-   - Community support from other AI entrepreneurs
-   - Unlimited updates to course content
-
-### Market Positioning
-"The only AI training built by someone who made $250K/year from word-of-mouth consulting, now AI-scaled. Learn her exact system."
+**Price:** $888 (one-time)  
+**Duration:** 8 weeks (self-paced)  
+**Format:** Video lessons + workbooks + templates  
 
 ---
 
-## CURRICULUM STRUCTURE
+## Module 1: Foundation (Week 1)
 
-### MODULE 1: THE 10 FUNDAMENTALS (2 hours)
+### Lesson 1.1: The Four Currencies Framework
+**Video:** 8 minutes
 
-**Goal:** Mental models for AI-augmented business
+What you'll learn:
+- What are the Four Currencies? (money, time, energy, freedom)
+- Why most entrepreneurs are broke even while making a lot
+- How to measure success using all four currencies
 
-**Topics:**
+**Workbook:**
+- Rate your current state (1-10 for each currency)
+- Define your desired state
+- Identify biggest imbalance
 
-**Fundamental #1: AI as Leverage, Not Replacement**
-- When AI magnifies your work (yes), when it replaces you (no)
-- The $1000/hr consultant who didn't get displaced — why
-- Your unique irreplaceable parts (relationships, judgment, creativity)
-- AI's superpower (speed, pattern recognition, 24/7 availability)
-
-**Fundamental #2: The Sacred Purpose Filter**
-- Some work shouldn't be delegated to AI (relationship-building)
-- Some work is perfect for AI (repetitive, routine, pattern-finding)
-- Decision framework: "Does this lose value if an AI does it?"
-- Example: Tina's never pitched (human relationship), but AI can help with copywriting
-
-**Fundamental #3: Quality Over Speed**
-- Why MVPs fail (they're broken, not MVP)
-- Tina's 23 years of word-of-mouth = no broken products ever
-- The cost of shipping broken: customer pain, reputation loss, refund requests
-- The benefit of excellence: word-of-mouth, trust, premium pricing
-
-**Fundamental #4: The Four Currencies Framework**
-- Money (obvious)
-- Time (your scarcest resource)
-- Energy (mental/emotional capacity)
-- Freedom (ability to choose)
-- Real wealth = growth in all four (not just money)
-- How AI helps: saves time/energy to increase freedom
-
-**Fundamental #5: Relationships > Transactions**
-- Your customers want to buy from you, not from an AI
-- Where AI helps: logistics, content, administration
-- Where AI hurts: initial trust-building, personal connection
-- Strategy: Use AI for scaling, humans for relationships
-
-**Fundamental #6: The Compound Wisdom Advantage**
-- Tina's expertise comes from 23 years of repeated patterns
-- Each decision taught her something
-- Each client conversation refined her method
-- The edge: pattern recognition from experience
-- AI can help: capture and codify that pattern recognition
-
-**Fundamental #7: Building Your AI Skill Stack**
-- Claude (language understanding, reasoning)
-- GPT (image understanding, tool use)
-- Gemini (multimodal, research)
-- Specialized tools (Firecrawl, etc.)
-- You don't need one AI — you need a team of AIs
-
-**Fundamental #8: Infrastructure First, Flashy Last**
-- Don't build dashboards before you have data
-- Don't build UI before you have logic
-- Don't ship before your product works
-- Tina's philosophy: invisible excellence (users see results, not code)
-
-**Fundamental #9: The Community Multiplier**
-- Solo AI entrepreneurship = limited
-- Community of AI entrepreneurs = exponential growth
-- Learning from each other's mistakes = time acceleration
-- Monthly calls = accountability + inspiration
-
-**Fundamental #10: Sacred Purpose Always Comes First**
-- Money follows purpose, not vice versa
-- Tina makes $1000/hr because she serves first
-- Building for people's actual problems, not fads
-- Longevity = choosing the right problems to solve
+**Key insight:** "Most entrepreneurs trade all four currencies for money, then wonder why they're exhausted and unhappy."
 
 ---
 
-### MODULE 2: CLAUDE SKILLS SYSTEM (4 hours)
+### Lesson 1.2: The Business Model Problem
+**Video:** 12 minutes
 
-**Goal:** Learn Tina's exact system for building AI-powered automations
+What you'll learn:
+- Why your current business model is probably wrong
+- The three types of leverage (product, team, capital)
+- How to identify your current constraints
 
-**Part 1: The Mental Model (1 hour)**
-- What is a Claude Skill?
-- Why it's different from regular AI prompts
-- How to design skills (not just use them)
-- Real ROI examples from Tina's use
+**Workbook:**
+- Analyze your business model
+- Find where your leverage is (or isn't)
+- Calculate your hourly rate vs. your effective hourly rate
 
-**Topics:**
-
-**Skill Type 1: Research Skills**
-- How to teach Claude to research
-- Building effective search prompts
-- Fact-checking and validation
-- Real example: Market research for a new product
-- Your use case: Research competitors, customer problems
-
-**Skill Type 2: Writing Skills**
-- Email sequences (sales, support, nurture)
-- Blog posts (teaching, SEO, authority)
-- Sales pages (conversion, clarity, psychology)
-- Social media (Twitter, LinkedIn, newsletters)
-- Real example: Email campaigns Tina ran (results)
-- Your use case: Building your content library
-
-**Skill Type 3: Analysis Skills**
-- Parsing structured data (CSVs, JSON, databases)
-- Customer feedback analysis
-- Financial data analysis
-- Competitive analysis frameworks
-- Real example: Analyzing Tina's client feedback
-- Your use case: Understanding your business metrics
-
-**Skill Type 4: Automation Skills**
-- Teaching Claude to work with APIs
-- Building workflows (n8n, Make.com integration)
-- Scheduled tasks (cron jobs, webhooks)
-- Real example: Tina's automated email + CRM sync
-- Your use case: Scaling without hiring
-
-**Skill Type 5: Code Skills**
-- Teaching Claude to code (framework, language, style)
-- Getting production-ready code (not just "hello world")
-- Testing and validation
-- Real example: Finance Friend system (built with Claude)
-- Your use case: Building your MVP fast
-
-**Part 2: Template Library (2 hours)**
-- 50+ ready-to-use prompts (organized by use case)
-- How to customize for your business
-- Common mistakes and how to avoid them
-
-**Templates Include:**
-- Sales copywriting (email, landing page, funnel)
-- Content creation (blog, newsletter, social)
-- Customer support (responses, documentation)
-- Product building (planning, architecture, code review)
-- Operations (scheduling, tracking, reporting)
-- Marketing (audience research, positioning, messaging)
-
-**Part 3: Live Skill Building (1 hour)**
-- Build one skill together during the course
-- Step-by-step walkthrough
-- Practice building 2-3 of your own
-- Community feedback on your skills
+**Key insight:** "If you're trading time for money, you're not a business—you're a job."
 
 ---
 
-### MODULE 3: FREEDOMBOT SETUP (1 hour + hands-on support)
+### Lesson 1.3: The Three Revenue Models
+**Video:** 15 minutes
 
-**Goal:** Build your personalized AI assistant
+What you'll learn:
+- **Model A:** Services (time for money) — Ceiling: $500K
+- **Model B:** Products (built once, sold many times) — Ceiling: $1M+
+- **Model C:** Hybrid (services to fund products) — Ceiling: Unlimited
 
-**What You Get:**
-- Consultation call to understand your business
-- Custom Freedombot configuration
-- Setup of automations (n8n, Make.com)
-- Integration with your existing tools
-- Weekly support for first month
-
-**Process:**
-1. **Discovery** (30 min call with Moriah/Mark)
-   - What's your biggest bottleneck?
-   - Which tasks waste most time?
-   - Which decisions are repetitive?
-   - Which client problems repeat?
-
-2. **Design** (Moriah/Mark build)
-   - Custom Claude prompt for your domain
-   - Automation workflow (if applicable)
-   - Integration with your tools
-   - Testing script
-
-3. **Deployment** (Moriah/Mark deploy)
-   - Set up on your system
-   - Training on how to use it
-   - Monitoring first week
-   - Optimization based on real use
-
-4. **Optimization** (4 weeks)
-   - Weekly 15-min calls
-   - Refinement based on results
-   - New automations as you discover them
-   - Documentation
+**Workbook:**
+- Which model are you in?
+- Which model do you want to be in?
+- What needs to change?
 
 ---
 
-### MODULE 4: THE MONTHLY COMMUNITY (Ongoing)
+## Module 2: Diagnosis (Week 2)
 
-**Value Delivered:**
-1. **New Templates** (weekly)
-   - Trending techniques from our latest work
-   - Templates for new AI models/tools
-   - Community-submitted ideas + refinements
+### Lesson 2.1: Find Your Constraint
+**Video:** 10 minutes
 
-2. **New Tools & Automations** (monthly)
-   - Pre-built n8n/Make.com workflows
-   - Custom GPTs/Claude projects
-   - Ready-to-deploy solutions
+What you'll learn:
+- Theory of Constraints (what's slowing you down?)
+- How to identify your real bottleneck
+- Why your intuition is usually wrong
 
-3. **Monthly Tina Call** (2 hours)
-   - Ask anything about your business
-   - Real-time feedback on your strategy
-   - Guest experts (Mark, Maria, others)
-   - Community sharing (what's working for others)
-
-4. **Private Agent Workspace**
-   - Access to Tina's working systems
-   - Code templates and libraries
-   - Running examples (Finance Friend, Team Board, etc.)
-   - Behind-the-scenes look at how she builds
-
-5. **Community Support**
-   - Private Discord/Slack
-   - Peer feedback on ideas
-   - Collaboration opportunities
-   - Job/partnership opportunities
+**Workbook:**
+- List everything that could be better
+- Score each by impact and effort
+- Find the one thing that matters most
 
 ---
 
-## CURRICULUM PHILOSOPHY
+### Lesson 2.2: Analyze Your Ideal Customer
+**Video:** 12 minutes
 
-### What Sets This Apart
-Most AI courses teach:
-- "Here's Claude, use it"
-- "Here's a prompt, copy it"
-- "Look, AI can do X"
+What you'll learn:
+- Who actually buys from you? (not who you think)
+- What problem do you actually solve?
+- How much would they pay to solve it?
 
-This course teaches:
-- "Here's how I think about AI" (mental models)
-- "Here's my exact process" (systems and frameworks)
-- "Here's your Freedombot" (personalized setup, not generic)
-- "Here's the community" (ongoing support, not one-and-done)
-
-### Who This Is For
-✅ Coaches, consultants, online educators wanting to scale  
-✅ Entrepreneurs building products with AI  
-✅ People who already have a business wanting to AI-augment it  
-✅ People who want to make $1000+/hour with less suffering  
-
-### Who This Is NOT For
-❌ People wanting to replace themselves with AI  
-❌ Get-rich-quick seekers  
-❌ People unwilling to do excellent work  
-❌ People not aligned with sacred purpose first  
+**Workbook:**
+- Interview 5 actual customers
+- Document their exact problems
+- Calculate how much they'd pay
 
 ---
 
-## DELIVERY FORMAT
+### Lesson 2.3: Define Your "Unfair Advantage"
+**Video:** 10 minutes
 
-### Fundamentals Module
-- 10 × 10-minute videos (teaching format TBD)
-- 10 × 5-minute exercises (reflection + application)
-- Discussion prompts in community
-- Reading list (articles, books referenced)
+What you'll learn:
+- What do you know that others don't?
+- What can you do that others can't?
+- What do you have that others don't have?
 
-### Claude Skills System
-- 50+ templates (downloadable, documented)
-- 4 × 1-hour videos (skill types + customization)
-- Live skill-building session (60 min)
-- Community template library (continuously updated)
-
-### Freedombot Setup
-- Custom discovery call (30 min with Moriah/Mark)
-- Custom prompt engineering (2-3 hours Moriah/Mark time)
-- Weekly optimization calls (4 weeks × 15 min)
-- Documentation + training materials
-
-### Community
-- Private Discord/Slack workspace
-- Monthly Tina call (2 hours, recorded)
-- Weekly template drops
-- Monthly automation releases
-- Community archive (all past calls, templates, etc.)
+**Workbook:**
+- List your unfair advantages
+- Rank by defensibility
+- Plan how to amplify your strongest one
 
 ---
 
-## BUSINESS MODEL
+## Module 3: Design (Week 3)
 
-### Revenue Breakdown
-- **Fundamentals Module:** Built once, sold unlimited
-- **Claude Skills System:** Templates updated monthly, evergreen content
-- **Freedombot Setup:** $300 per person (includes in $888 course)
-- **Monthly Community:** $77/month × N customers
+### Lesson 3.1: Product vs. Service Decision
+**Video:** 15 minutes
 
-### Pricing Justification
-- $888 one-time gets you:
-  - 7 hours of Tina's wisdom (value: $7,000+ if hourly)
-  - 50+ templates (value: $50-100 each = $2,500+)
-  - Freedombot setup (value: $300-500)
-  - First month of community ($77)
-  - Total value: $10K+, price $888 = 9× value multiple
+What you'll learn:
+- Decision framework for product/service/hybrid
+- Revenue math for each model
+- Implementation timeline for each
 
-- $77/month gets you:
-  - Monthly Tina call (1.5 hours = $1,500 value)
-  - New templates + automations ($500 value)
-  - Community support (priceless for problem-solving)
-  - Tool access ($200+ value if tools cost separately)
-  - Total value: $2,200+, price $77 = 28× value multiple
-
-### Customer Acquisition
-- Word-of-mouth (Tina's network)
-- Course graduates becoming evangelists
-- Monthly calls get recorded, testimonials created
-- Community members referring others
-- Partnership with related courses
-
-### Growth Model
-- Month 1: 20-50 customers ($17.6K - $44K one-time)
-- Month 1-3: $77 × 35 avg = $2,695/month recurring
-- Month 6: 100+ customers, $7,700+/month recurring
-- Year 1: $300K+ MRR at 500+ customers
+**Workbook:**
+- Run the numbers for each model
+- Evaluate team requirements
+- Choose your path
 
 ---
 
-## PRODUCTION TIMELINE
+### Lesson 3.2: Build Your Business Plan (2 weeks)
+**Video:** 20 minutes + templates
 
-### Phase 1: Record Fundamentals (Week 1)
-- [ ] Plan filming/recording (or screen recording setup)
-- [ ] Record 10 × 10-min videos
-- [ ] Record 10 × 5-min exercises
-- [ ] Edit and caption
+What you'll learn:
+- Lean startup approach (not 50-page business plan)
+- One-page business model (9 boxes)
+- Revenue assumptions & unit economics
 
-### Phase 2: Organize Templates (Week 1-2)
-- [ ] Pull Tina's 50+ best templates
-- [ ] Organize by category
-- [ ] Document how to use each
-- [ ] Create customization guide
+**Workbook:**
+- Fill out your one-page model
+- Calculate break-even point
+- Project 12-month revenue
 
-### Phase 3: Record Claude Skills System (Week 2)
-- [ ] Record 4 × 1-hour module videos
-- [ ] Record 1 × 1-hour live skill-building session
-- [ ] Edit and package
-
-### Phase 4: Build Community Platform (Week 2-3)
-- [ ] Set up Discord/Slack workspace
-- [ ] Create channel structure
-- [ ] Set up automation for monthly Tina calls
-- [ ] Create archive system
-
-### Phase 5: Build Sales Page & Checkout (Week 3)
-- [ ] Design sales page
-- [ ] Write copy
-- [ ] Set up Stripe/payment processor
-- [ ] Set up email automation (welcome sequence)
-
-### Phase 6: Soft Launch (Week 4)
-- [ ] Launch to Tina's existing network (50-100 beta customers)
-- [ ] Collect feedback
-- [ ] Iterate
-- [ ] Document common questions
-
-### Phase 7: Public Launch (Week 5)
-- [ ] Full marketing push
-- [ ] Social media campaign
-- [ ] Email outreach
-- [ ] Ongoing community management
+**Templates provided:**
+- Customer acquisition cost calculator
+- Pricing decision framework
+- Cash flow projector
 
 ---
 
-## CONTENT MAPPING
+### Lesson 3.3: Team & Tools
+**Video:** 12 minutes
 
-### Fundamentals Module — Content Sources
-- **Fundamental #1-10:** From TINA_THE_TRUTH.md + her wisdom transcripts
-- **Real examples:** Her 23 years of consulting, $1000/hr clients, word-of-mouth business
-- **Stories:** Transcripts from her coaching calls (sanitized)
-- **Frameworks:** Four Currencies, Sacred Purpose, etc.
+What you'll learn:
+- What to hire vs. what to automate vs. what to outsource
+- Tools that scale without hiring
+- When to hire your first person
 
-### Claude Skills System — Content Sources
-- **Templates:** Desktop Claude files + Mark's code examples
-- **Real results:** Finance Friend, Team Agent Board, Security system (all built with Claude)
-- **Use cases:** Her actual work + student work
-- **Documentation:** TOOLS.md + CAPABILITIES.md from her workspace
-
-### Freedombot Setup — Content Sources
-- **Process:** Standard discovery → design → deployment
-- **Customization:** Based on individual student needs
-- **Examples:** Finance Friend coach, Team Board assignments, etc.
-
-### Community — Content Sources
-- **Templates:** Continuously updated based on latest techniques
-- **Calls:** Monthly Tina wisdom sessions (evergreen content)
-- **Automations:** n8n/Make.com workflows built for community
-- **Tools:** Custom GPTs, Claude projects, etc.
+**Workbook:**
+- Map all tasks in your business
+- Categorize (you must do / should do / must outsource)
+- Design your ideal team structure
 
 ---
 
-## NEXT STEPS
+## Module 4: Execution (Week 4)
 
-**Blocked On:**
-1. Tina's time to review curriculum
-2. Decision on recording format (video, audio, transcript)
-3. Template library compilation
+### Lesson 4.1: Launch Strategy
+**Video:** 15 minutes
 
-**Ready to Execute:**
-1. Record fundamentals (if curriculum approved)
-2. Organize templates (once we know which ones)
-3. Build community platform (immediately)
-4. Build sales page (immediately)
+What you'll learn:
+- Soft launch vs. big launch (spoiler: soft is better)
+- How to get first 100 customers
+- Measuring what matters
 
-**Recommendation:**
-Parallel track with Finance Friend launch:
-- Finance Friend → immediate revenue
-- AI Entrepreneur Course → scaling system for future customers
-- CoachTinaMarie → foundation for all content
+**Workbook:**
+- 30-day launch plan
+- Customer acquisition channels
+- Metrics dashboard (what to track)
 
 ---
 
-**Status:** Curriculum complete, ready for Tina review  
-**Owner:** Moriah 🏔️  
-**Last Updated:** March 21, 2026, 11:35 PM HADT
+### Lesson 4.2: Marketing That Works
+**Video:** 18 minutes
+
+What you'll learn:
+- Content marketing (writing, video, audio)
+- Paid ads (when to start, how to scale)
+- Community building (the long game)
+
+**Workbook:**
+- Content calendar (30 days)
+- Ad experiment plan
+- Community strategy
+
+**Bonus:** Email templates for customer acquisition
+
+---
+
+### Lesson 4.3: Sales Conversations
+**Video:** 12 minutes + scripts
+
+What you'll learn:
+- How to have sales conversations without being sleazy
+- Objection handling
+- Closing (when it's right)
+
+**Scripts provided:**
+- Cold email
+- Sales call framework
+- Objection responses
+
+---
+
+## Module 5: Scale (Week 5)
+
+### Lesson 5.1: From $0 to $10K/month
+**Video:** 15 minutes
+
+What you'll learn:
+- Tactics that work at $0-$10K stage
+- Common mistakes (and how to avoid them)
+- When to hire first person
+
+**Case studies:**
+- 5 real businesses ($0→$10K in 90 days)
+- What worked, what didn't
+- Their metrics and lessons
+
+---
+
+### Lesson 5.2: From $10K to $100K/month
+**Video:** 18 minutes
+
+What you'll learn:
+- Systems that scale (playbooks, automations)
+- Team building (hiring, managing, paying)
+- Staying sane while growing fast
+
+**Workbook:**
+- Build your first process documentation
+- Design org chart for $100K revenue
+- Create hiring plan
+
+---
+
+### Lesson 5.3: Raising Money (If Needed)
+**Video:** 12 minutes
+
+What you'll learn:
+- Do you actually need funding? (probably not)
+- How to bootstrap to $100K+
+- When to raise (and from whom)
+
+**Bonus materials:**
+- Pitch deck template
+- Investor conversation guide
+- Term sheet explainer (non-lawyers language)
+
+---
+
+## Module 6: The Four Currencies at Scale (Week 6)
+
+### Lesson 6.1: Money at Scale
+**Video:** 10 minutes
+
+What you'll learn:
+- Profitability vs. revenue (why most metrics lie)
+- Unit economics (the one number that matters)
+- Pricing strategy as business model
+
+**Workbook:**
+- Calculate your unit economics
+- Optimize your pricing
+- Forecast annual profit
+
+---
+
+### Lesson 6.2: Time at Scale
+**Video:** 12 minutes
+
+What you'll learn:
+- The trap of "success" (more revenue = more work)
+- Delegation and systems
+- How to work less while making more
+
+**Workbook:**
+- Time audit (where does your time actually go?)
+- Build first automation/delegation plan
+- Set "no-go" hours/days
+
+---
+
+### Lesson 6.3: Energy at Scale
+**Video:** 10 minutes
+
+What you'll learn:
+- Sustainability (burnout is not a badge)
+- What depletes vs. energizes you
+- Designing work around your energy
+
+**Workbook:**
+- Energy audit (what recharges you?)
+- Redesign your week to maximize energy
+- Identify early burnout signals
+
+---
+
+### Lesson 6.4: Freedom at Scale
+**Video:** 12 minutes
+
+What you'll learn:
+- Freedom at $100K is different than at $0
+- You're still not free if your business needs you
+- Building optionality (what are you optimizing for?)
+
+**Workbook:**
+- Define your version of freedom
+- Identify what would break if you took a month off
+- Build plan to build true freedom
+
+---
+
+## Module 7: Optimize (Week 7)
+
+### Lesson 7.1: Metrics That Matter
+**Video:** 12 minutes
+
+What you'll learn:
+- Vanity metrics vs. real metrics
+- Customer acquisition cost (CAC)
+- Lifetime value (LTV)
+- Payback period
+
+**Dashboard template provided:**
+- Set up your own metrics dashboard
+- Real-time tracking
+
+---
+
+### Lesson 7.2: Pricing Strategy
+**Video:** 15 minutes
+
+What you'll learn:
+- How to price (it's not what you think)
+- Value-based pricing
+- When and how to raise prices
+
+**Workbook:**
+- Calculate your minimum viable price
+- Build pricing strategy
+- Plan price increases
+
+---
+
+### Lesson 7.3: The Curve of Cash Flow
+**Video:** 10 minutes
+
+What you'll learn:
+- Why businesses fail despite being profitable
+- Cash management
+- Contracts that protect you
+
+**Templates:**
+- Basic service contract
+- Product terms of service
+- Payment policies
+
+---
+
+## Module 8: The Vision (Week 8)
+
+### Lesson 8.1: What Do You Actually Want?
+**Video:** 15 minutes
+
+What you'll learn:
+- Separate business goals from life goals
+- Design your ideal life (all four currencies)
+- Reverse-engineer the business you need
+
+**Workbook:**
+- Vision setting (5 years out)
+- Annual goals (all four currencies)
+- 90-day sprint plan
+
+---
+
+### Lesson 8.2: Contingency Planning
+**Video:** 10 minutes
+
+What you'll learn:
+- What could go wrong?
+- How to prepare without being paranoid
+- Building resilience
+
+**Workbook:**
+- Risk analysis
+- Contingency planning
+- Disaster recovery
+
+---
+
+### Lesson 8.3: Your Next 90 Days
+**Video:** 12 minutes + planning session
+
+What you'll learn:
+- How to move from learning to doing
+- First priorities (what matters most?)
+- How to stay accountable
+
+**Workbook:**
+- 90-day action plan
+- Weekly milestones
+- Accountability checklist
+
+**Bonus:** Access to private community for Q&A
+
+---
+
+## Bonuses Included
+
+✅ **Templates** (20+ ready-to-use)
+- Business plan template
+- Pitch deck
+- Email sequences
+- Sales scripts
+- Contract templates
+- Pricing calculator
+- Cash flow projector
+
+✅ **Tools**
+- Customer acquisition cost calculator
+- Break-even calculator
+- Unit economics spreadsheet
+- Financial projector
+
+✅ **Community** (lifetime access)
+- Private community forum
+- Ask questions, share progress
+- Monthly group coaching calls
+
+✅ **Updates**
+- New lessons as business landscape changes
+- Case studies from successful students
+- Tool updates and new templates
+
+---
+
+## Success Stories (Coming Soon)
+
+Once students complete the course:
+- Share their story (anonymized)
+- Document their results
+- Future students learn from real examples
+
+---
+
+## Pricing & Access
+
+**AI Entrepreneur Course: $888**
+- One-time payment
+- Lifetime access
+- All bonuses included
+- Money-back guarantee (30 days)
+
+---
+
+## Launch Timeline
+
+**When transcripts arrive:**
+1. Extract wisdom (2 hours)
+2. Build course platform (4 hours)
+3. Upload lessons + templates (4 hours)
+4. Create sales page (2 hours)
+5. Test end-to-end (2 hours)
+6. **Go live** (1 hour)
+
+**Total: 15 hours from transcripts to live**
+
+**Revenue potential:**
+- 100 students first month = $88,800
+- 500 students year 2 = $444,000+
+- Recurring: Ongoing passive income
+
+---
+
+## Course Philosophy
+
+This isn't theory. This is:
+
+✅ Real businesses Tina has built  
+✅ Real clients Tina has coached  
+✅ Real problems and real solutions  
+✅ Real case studies (anonymized)  
+✅ Real results (money, time, energy, freedom)  
+
+It's not "get rich quick." It's "build a real business that lets you live the life you want."
+
+---
+
+🏔️ **AI Entrepreneur Course is ready to build.**
+
+Waiting on transcripts to populate the wisdom layer.
+
+**Status: Architecture complete, ready for content population**
