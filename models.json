@@ -1,0 +1,7 @@
+{
+  "defaults": {
+    "research": "opencode/claude-opus-4-6",
+    "chat": "opencode-go/kimi-k2.5",
+    "planning": "sonnet/claude-sonnet-4.5"
+  }
+}

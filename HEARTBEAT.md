@@ -10,7 +10,7 @@ Without revenue, nothing else matters. Every session, every build, every decisio
 - **Heartbeat:** Gemini Flash Lite (free)
 - **Research & extraction sub-agents:** Groq llama-3.3-70b-versatile (FREE)
 - **Simple/fast tasks:** Groq llama-3.1-8b-instant (FREE)
-- **Conversations with Tina:** Haiku (cheap)
+- **Conversations with Tina:** Sonnet (Claude Sonnet 4.5) — highest-fidelity for direct dialog (per Tina's instruction)
 - **Complex coding, architecture, things that truly matter:** Sonnet only when necessary
 - **Rule:** Default to Groq Llama for any sub-agent work. It's free and capable. Haiku for conversations. Sonnet is the last resort, not the default.
 

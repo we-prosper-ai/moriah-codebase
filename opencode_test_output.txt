@@ -1,0 +1,21 @@
+[0m
+> build · claude-opus-4-6
+[0m
+Here's a concise 3-step landing page plan for Finance Friend:
+
+---
+
+## Finance Friend Landing Page Plan
+
+### Step 1: Lead Magnet (Free)
+Offer a **free downloadable PDF** — "5 Money Mistakes Costing You $500/Month" — gated behind an email opt-in. The page should have a strong headline, 3 bullet points of value, and a single email capture form. Goal: build the list.
+
+### Step 2: Tripwire ($7-$27)
+Immediately after opt-in, redirect to a **one-time offer page** selling a low-cost mini-course or toolkit — e.g., "The 30-Day Budget Reset Kit." Use urgency (countdown timer, "this price only available now") to convert while intent is high. Goal: turn subscribers into buyers and offset ad spend.
+
+### Step 3: Core Offer ($97-$297)
+Deliver the tripwire, then nurture via a **3-5 email sequence** leading to the full Finance Friend product page. The landing page should include: a clear value proposition, social proof/testimonials, a feature breakdown, an FAQ section, and a strong CTA with a money-back guarantee. Goal: convert warm buyers into core customers.
+
+---
+
+**Funnel flow:** Ad/Content → Lead Magnet → Tripwire (immediate upsell) → Email Nurture → Core Offer.
